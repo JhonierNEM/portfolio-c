@@ -20,7 +20,7 @@ export default function About({}) {
 
       <div className="h-[15%] flex items-center justify-center">
         <a
-          href={about.cv.spa}
+          href={about.cv.eng}
           download="Cv_Yhonier_Alegria"
           className=" bg-txSecond w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hvSecond"
         >
