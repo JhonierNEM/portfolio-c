@@ -9,7 +9,7 @@ export default function Proyects() {
     <div className="min-h-screen md:flex flex-col items-center" id="proyects">
       <div className="h-[10%] p-2 mb-2 text-center text-txThird xl:h-[15vh]">
         <h1 className="text-3xl font-bold">Proyectos</h1>
-        <p className="text-gray-500">Get in touch</p>
+        <p className="text-gray-500">Principales Proyectos</p>
       </div>
 
       <ProyectsCrl proyects={proyects} />

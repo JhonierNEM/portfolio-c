@@ -53,7 +53,7 @@ export default function ContactMe() {
     <div id="contactme" className="h-screen p-2">
       <div className="h-[10%] p-2 text-center text-tprimary">
         <h1 className="text-3xl font-bold">Contact Me</h1>
-        <p className="text-txThird/50">Get in touch</p>
+        <p className="text-txThird/50"></p>
       </div>
 
       <form

@@ -23,7 +23,7 @@ export default function Skills({}) {
       <div className=" my-6 sm:p-2">
         <Skill
           title="Frontend Developer"
-          subTitle="More than 4 years"
+          subTitle="Mas de 6 meses"
           icon="brackets"
           view={view.frontend ? view.frontend : false}
           setView={handleChangeView}
@@ -32,7 +32,7 @@ export default function Skills({}) {
         />
         <Skill
           title="Backend Developer"
-          subTitle="More than 2 monts"
+          subTitle="Mas de 4 meses"
           icon="server"
           view={view.backend ? view.backend : false}
           setView={handleChangeView}

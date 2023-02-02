@@ -20,7 +20,7 @@ export default function Main() {
         <img
           src={main.image}
           style={{ borderRadius: "29% 71% 31% 69% / 77% 23% 77% 23%" }}
-          className="w-2/3 sm:w-[200px] md:w-[300px]"
+          className="w-2/3 sm:w-[200px] md:w-[300px] bg-bgSecond"
         />
         <div className="px-4 w-full my-8">
           <h1 className="text-3xl font-bold">Hola, Soy {main.myName}</h1>

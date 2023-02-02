@@ -1,5 +1,10 @@
 import PropertiesYou from "./images/PropertiesYou.PNG"
 import UserIcon from "./images/UserIcon.jpg"
+import MainImage from "./images/MainImage.png"
+import AboutImage from "./images/AboutImage.jpg"
+import DogsApp from "./images/DogsApp.png"
+import WeatherApp from "./images/WeatherApp.PNG"
+
 import LinkedIn from "./icons/LinkedIn"
 import GitHub from "./icons/GitHub"
 import Instagram from "./icons/Instagram"
@@ -24,10 +29,18 @@ import cvAlegira from "./documents/CV_Alegria.pdf"
 
 export const  images = {
     main: {
-       UserIcon 
+       UserIcon,
+       MainImage,
+       AboutImage
     },
     PropertiesYou:{
         landing: PropertiesYou
+    },
+    DogsApp:{
+        DogsApp
+    },
+    WeatherApp:{
+        WeatherApp
     },
     alert:{
         iconsSuccess,

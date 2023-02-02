@@ -5,12 +5,12 @@ const information = {
     main: {
       header: "Alegria",
       myName: "Yhonier",
-      image: images.main.UserIcon,
+      image: images.main.MainImage,
       profession: "Full Stack Developer",
       description: `Me encanta la programación, quiero explorar mas este mundo y dusfrutar la travecia "Siempre se puede mejorar"`,
     },
     about: {
-      image: images.main.UserIcon,
+      image: images.main.AboutImage,
       description: `Desarrollador web con habilidades en HTML, CSS, JavaScript,
       TypeScript. Tengo experiencia en ReactJS, Cuento con
       una fuerte comprensión del diseño responsivo, con
@@ -55,7 +55,7 @@ const information = {
       name: "Dog App",
       shortDescription: `Aplicacion donde puede visualizar las diferentes razas de perros existentes, se pueden realizar busquedas y filtrado,
       ademas se puede crear una nueva raza`,
-      image: images.PropertiesYou.landing,
+      image: images.DogsApp.DogsApp,
       gitLink: "https://github.com/JhonierNEM/PI-Dogs-main",
       demoLink: "",
       more: {
@@ -66,7 +66,7 @@ const information = {
       name: "Weather App",
       shortDescription: `Aplicacion  del clima, mediante una peticion a una api externa se puede visualizar los datos sobre el clima de una lugar determnado.
       `,
-      image: images.PropertiesYou.landing,
+      image: images.WeatherApp.WeatherApp,
       gitLink: "https://github.com/JhonierNEM/weather-app",
       demoLink: "",
       more: {
