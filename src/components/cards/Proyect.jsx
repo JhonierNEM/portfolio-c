@@ -10,7 +10,7 @@ export default function Proyect({
 }) {
   return (
     <div className="relative w-full max-h-full rounded p-2 md:my-2 flex flex-col items-center md:shadow md:w-[340px]">
-      <img className="w-full h-[200px]  rounded-xl shadow md:shadow-none" src={image} />
+      <img className="h-[200px] rounded-xl shadow md:shadow-none" src={image} />
 
       <div></div>
       <h1 className="w-full my-4 text-xl font-bold">{title}</h1>
