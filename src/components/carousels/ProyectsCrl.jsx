@@ -195,5 +195,5 @@ const Button = styled.button`
 const ToButton = styled.button`
   transition: all 0.2s ease-in-out;
   background: ${(props) =>
-    props.i === props.to ? "rgb(76 29 149 / var(--tw-bg-opacity))" : ""};
+    props.i === props.to && "#10002b"};
 `;

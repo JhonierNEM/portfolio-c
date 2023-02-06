@@ -52,7 +52,7 @@ export default function ContactMe() {
   return (
     <div id="contactme" className="h-screen p-2">
       <div className="h-[10%] p-2 text-center text-tprimary">
-        <h1 className="text-3xl font-bold">Contact Me</h1>
+        <h1 className="text-3xl font-bold">Contactame</h1>
         <p className="text-txThird/50"></p>
       </div>
 
@@ -67,12 +67,14 @@ export default function ContactMe() {
             name="name"
             changeValue={handleChangeForm}
             value={form.name}
+            label="Nombre"
           />
           <Input
             type="email"
             name="email"
             changeValue={handleChangeForm}
             value={form.email}
+            label="Correo"
           />
         </div>
         <Input
@@ -80,6 +82,7 @@ export default function ContactMe() {
           name="subject"
           changeValue={handleChangeForm}
           value={form.subject}
+          label="Asunto"
         />
         <div className="w-full">
           <TextArea

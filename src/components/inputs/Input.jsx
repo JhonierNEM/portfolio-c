@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export default function Input({ name, value, changeValue ,type}) {
+export default function Input({ name, value, changeValue ,type, label}) {
   return (
     <Container>
       <Field type={type} name={name} required onChange={changeValue} value={value}/>
       <Label>
-        {name.split("").map((el, i) => (
+        {label.split("").map((el, i) => (
           <Span delay={i} key={i}>
             {i === 0 ? el.toUpperCase() : el}
           </Span>

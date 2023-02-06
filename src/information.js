@@ -7,7 +7,7 @@ const information = {
       myName: "Yhonier",
       image: images.main.MainImage,
       profession: "Full Stack Developer",
-      description: `Me encanta la programación, quiero explorar mas este mundo y dusfrutar la travecia "Siempre se puede mejorar"`,
+      description: `Me encanta la programación, quiero explorar mas este mundo y disfrutar la travesía "Siempre  estaré dispuesto a mejorar"`,
     },
     about: {
       image: images.main.AboutImage,
@@ -30,14 +30,12 @@ const information = {
       { name: "Redux", value: 50 },
     ],
     backend: [
-      {name:"Sql",value:100},
+      { name: "Sql", value: 100 },
       { name: "Node.js", value: 80 },
       { name: "Express.js", value: 80 },
       { name: "sequelize", value: 50 },
     ],
-     design: [
-      { name: "Figma", value: 30 },
-    ], 
+    design: [{ name: "Figma", value: 30 }],
   },
   proyects: [
     {

@@ -9,7 +9,7 @@ export default function TextArea({ name, cols, rows, changeValue, value }) {
         name={name}
         cols={cols}
         rows={rows}
-        placeholder="Message"
+        placeholder="Mensaje"
         onChange={changeValue}
         value={value}
       />
