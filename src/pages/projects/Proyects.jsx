@@ -1,5 +1,5 @@
-import ProyectsCrl from "../../components/carousels/ProyectsCrl";
-import Proyect from "../../components/cards/Proyect";
+import ProyectsCrl from "../../components/carousels/ProjectsCrl";
+import Proyect from "../../components/cards/Project";
 import information from "../../information";
 import styled from "styled-components";
 

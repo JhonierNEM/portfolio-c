@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRef } from "react";
 import styled from "styled-components";
-import Proyect from "../cards/Proyect";
+import Proyect from "../cards/Project";
 import information from "../../information";
 import { icons } from "../../assets";
 

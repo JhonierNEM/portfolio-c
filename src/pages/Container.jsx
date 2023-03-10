@@ -1,7 +1,7 @@
 import Main from "./main/Main";
 import Menu from "../components/navs/Menu";
 import ContactMe from "./contact/ContactMe";
-import Proyects from "./proyects/Proyects";
+import Projects from "./projects/Projects";
 import About from "./about/About";
 import Skills from "./skills/Skills";
 
@@ -13,7 +13,7 @@ export default function Container() {
       </div>
 
       <Main />
-      <Proyects />
+      <Projects />
       <About />
       <Skills />
       <ContactMe />
