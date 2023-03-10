@@ -1,7 +1,7 @@
 import Main from "./main/Main";
 import Menu from "../components/navs/Menu";
 import ContactMe from "./contact/ContactMe";
-import Projects from "./projects/Projects";
+import Projects from "./projects/Proyects";
 import About from "./about/About";
 import Skills from "./skills/Skills";
 

@@ -1,10 +1,10 @@
-import ProyectsCrl from "../../components/carousels/ProjectsCrl";
-import Proyect from "../../components/cards/Project";
+import ProjectsCrl from "../../components/carousels/ProjectsCrl";
+import Project from "../../components/cards/Project";
 import information from "../../information";
 import styled from "styled-components";
 
-export default function Proyects() {
-  const { proyects } = information;
+export default function Projects() {
+  const { projects } = information;
   return (
     <div className="min-h-screen md:flex flex-col items-center" id="proyects">
       <div className="h-[10%] p-2 mb-2 text-center text-txThird xl:h-[15vh]">
@@ -12,11 +12,11 @@ export default function Proyects() {
         <p className="text-gray-500">Principales Proyectos</p>
       </div>
 
-      <ProyectsCrl proyects={proyects} />
+      <ProjectsCrl proyects={projects} />
 
       <Media className="w-auto hidden md:flex flex-col items-center">
-        {proyects.map((element, i) => (
-          <Proyect
+        {projects.map((element, i) => (
+          <Project
             key={i}
             title={element.name}
             description={element.shortDescription}
