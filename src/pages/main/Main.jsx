@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <div
       id="home"
-      className="relative min-h-[800px]  h-screen px-6 text-textOne flex flex-col items-center justify-center gap-8 md:min-h-[500px]"
+      className="relative min-h-[800px]  h-screen px-6 text-textOne flex flex-col items-center justify-center gap-8 md:min-h-[500px] md:pl-[200px]"
       style={{
         background:
           "linear-gradient(180deg, #000000 0%, #0A232F 95.31%, #050614 100%)",

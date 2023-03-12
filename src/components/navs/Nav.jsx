@@ -2,7 +2,7 @@ import { icons } from "../../assets";
 
 export default function Nav() {
   return (
-    <div className="bg-bgSecond w-[10%] h-[100vh]  p-2 flex flex-col justify-between fixed top-0 left-0 shadow-xl group/lh lg:w-[90px] lg:hover:w-[200px] z-50">
+    <div className="hidden bg-bgSecond w-[10%] h-[100vh]  p-2 md:flex flex-col justify-between fixed top-0 left-0 shadow-xl group/lh lg:w-[90px] lg:hover:w-[200px] z-50">
       <nav className="flex flex-col items-center space-y-1 list-none my-2 font-semibold">
         <li className="w-full">
           <a
