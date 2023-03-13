@@ -17,7 +17,7 @@ export default function Main() {
         {main.header}
       </h2>
 
-      <picture className="max-w-[250px] w-3/4 grid place-content-center md:fixed md:top-4 md:right-6 md:w-[90px] md:h-auto md:z-50">
+      <picture className="max-w-[250px] w-3/4 grid place-content-center md:hidden md:top-4 md:right-6 md:w-[90px] md:h-auto md:z-50">
         <img
           src={main.image}
           style={{ borderRadius: "29% 71% 31% 69% / 77% 23% 77% 23%" }}
