@@ -10,7 +10,7 @@ export default function Main() {
       className="relative min-h-[800px]  h-screen px-6 text-textOne flex flex-col items-center justify-center gap-8 md:min-h-[500px] md:pl-[200px]"
       style={{
         background:
-          "linear-gradient(180deg, #000000 0%, #0A232F 95.31%, #050614 100%)",
+          "linear-gradient(180deg, #0A0908 0%, #03987D 95.31%, #0A0908 100%)",
       }}
     >
       <h2 className="fixed top-2 left-6 text-lg font-bold mix-blend-difference md:hidden">

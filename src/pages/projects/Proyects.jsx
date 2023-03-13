@@ -6,8 +6,8 @@ import styled from "styled-components";
 export default function Projects() {
   const { projects } = information;
   return (
-    <div className="min-h-screen md:flex flex-col items-center" id="proyects">
-      <div className="h-[10%] p-2 mb-2 text-center text-txThird xl:h-[15vh]">
+    <div className="bg-main min-h-[800px]  h-screen md:flex flex-col items-center text-textOne ms:min-h-[500px] md:pl-[150px]" id="proyects">
+      <div className="">
         <h1 className="text-3xl font-bold">Proyectos</h1>
         <p className="text-gray-500">Principales Proyectos</p>
       </div>

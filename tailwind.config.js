@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        main:"#050614",
+        main:"#0A0908",
         gradientOne:"#000",
         gradientTwo:"#0A232F",
         textOne:"#fff",
