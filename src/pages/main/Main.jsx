@@ -10,7 +10,7 @@ export default function Main() {
       className="relative min-h-[800px]  h-screen px-6 text-textOne flex flex-col items-center justify-center gap-8 md:min-h-[500px] md:pl-[200px]"
       style={{
         background:
-          "linear-gradient(180deg, #0A0908 0%, #03987D 95.31%, #0A0908 100%)",
+          "linear-gradient(180deg, #0A0908 10%, #150c1a 90.31%, #0A0908 100%)",
       }}
     >
       <h2 className="fixed top-2 left-6 text-lg font-bold mix-blend-difference md:hidden">
@@ -35,7 +35,7 @@ export default function Main() {
         <p className="text-[1em] sm:text-[1.4em] md:text-[1.8em] md:max-w-[80%]">{main.description}</p>
       </div>
 
-      <a href="#contactme" className="bg-textTwo flex px-8 py-4 mt-8 gap-2 rounded-md animate-bounce md:absolute md:right-6 bottom-6">
+      <a href="#contactme" className="bg-textTwo flex px-8 py-4 mt-8 gap-2 rounded-md animate-bounce hover:bg-hoverOne shadow-lg shadow-black md:absolute md:right-6 bottom-6">
         <span className="text-lg text-txFirst font-bold ">Contact</span>
         <PaperAirplaneIcon className="stroke-txFirst " width={30} height={30} />
       </a>

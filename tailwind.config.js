@@ -15,8 +15,9 @@ module.exports = {
         gradientOne:"#000",
         gradientTwo:"#0A232F",
         textOne:"#fff",
-        textTwo:"#03987D",
+        textTwo:"#6411ad",
         textThree: "#C5C5C5",
+        hoverOne:"#3c096c",
 
         bgFirst:"#fff",
         bgSecond:"#10002b",
