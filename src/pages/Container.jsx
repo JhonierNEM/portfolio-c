@@ -1,6 +1,6 @@
 import Main from "./main/Main";
 import ContactMe from "./contact/ContactMe";
-import Projects from "./projects/Proyects";
+import Projects from "./projects/Projects";
 import About from "./about/About";
 import Skills from "./skills/Skills";
 

@@ -7,41 +7,26 @@ export default function Proyect({
   description,
   gitLink,
   demoLink,
+  project
 }) {
   return (
-    <div className="relative w-full max-h-full rounded p-2 md:my-2 flex flex-col items-center md:shadow md:w-[340px]">
-      <img className="h-[200px] rounded-xl shadow md:shadow-none" src={image} />
-
-      <div></div>
-      <h1 className="w-full my-4 text-xl font-bold">{title}</h1>
-      <p className="w-full min-h-[150px] max-h-[150px]  overflow-hidden text-txThird/60">
-        {description}
-      </p>
-
-      <div className={classNames("w-full my-6 flex items-center sm:my-1")}>
-        {gitLink ? (
-          <a
-            href={gitLink}
-            target="_blank"
-            rel="noreferrer"
-            className="w-16 h-16 py-2 px-4 bg-bgSecond rounded-lg flex items-center text-txFirst sm:py-0 sm:h-14 hover:bg-hvSecond"
-          >
-            {/* <span className="text-lg font-bold">GitHub</span> */}
-            <icons.GitHub className="fill-bgFirst" />
+    <div className="text-textOne min-h-[500px] col-span-1  relative overflow-hidden rounded shadow-lg shadow-black">
+      <picture className="grid place-content-center h-full w-full" /*  */>
+        <img src={project.image} alt="" className="h-full w-auto" style={{aspectRatio:"auto",height:"auto"}}/>
+      </picture>
+      <div className="bg-black/80 backdrop-blur-sm absolute left-0 bottom-0 h-[150px] w-full flex justify-between items-center px-8 py-4  rounded">
+        <section className="w-3/4">
+          <h3 className="text-2xl font-bold">{title}</h3>
+          <p className="font-light max-h-[70px] overflow-hidden">{description}</p>
+        </section>
+        <section className="h-full flex flex-col items-end justify-evenly shadow">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <icons.GitHub className="w-8 h-8 fill-white hover:fill-hoverOne"/>
           </a>
-        ) : null}
-
-        {demoLink && (
-          <a
-            href={demoLink}
-            target="_blank"
-            rel="noreferrer"
-            className="bg-bgSecond h-16 flex items-center p-2 mx-4 rounded-lg shadow-sm overflow-hidden sm:h-14 hover:bg-hvSecond"
-          >
-            <span className="text-txFirst text-xl font-bold mx-4 md:text-lg">Demo</span>
-            <icons.BoxUp className="fill-txFirst w-8 h-8 mx-2" />
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <icons.NewWindow className="w-8 h-8 fill-white hover:fill-hoverOne" />
           </a>
-        )}
+        </section>
       </div>
     </div>
   );

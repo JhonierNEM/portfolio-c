@@ -14,6 +14,7 @@ import About from "./icons/About"
 import Contact from "./icons/Contact"
 import Service from "./icons/Service"
 import Note from "./icons/Note"
+import NewWindow from "./icons/NewWindow"
 import iconsSuccess from "./images/iconsSuccess.png"
 import iconsWarning from "./images/iconsWarning.png"
 import Download from "./icons/Download"
@@ -62,6 +63,7 @@ export const icons = {
     LinkedIn,
     Rigth,
     Service,
+    NewWindow,
     Note,
     Up,
     Work,
