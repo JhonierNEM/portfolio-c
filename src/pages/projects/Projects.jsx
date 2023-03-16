@@ -10,7 +10,7 @@ export default function Projects() {
         <p className="text-textThree">Main Projects</p>
       </div>
       <div className="grid md:grid-cols-2 gap-8 py-6">
-        {projects.map((project,i) => <Project key={i} project={project} description={project.shortDescription} title={project.name}/>)}
+        {projects.map((project,i) => <Project key={i} image={project.image} description={project.shortDescription} title={project.name} gitLink={project.gitLink}/>)}
       </div>
     </div>
   );

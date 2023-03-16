@@ -13,7 +13,7 @@ export default function Main() {
           "linear-gradient(180deg, #0A0908 10%, #150c1a 90.31%, #0A0908 100%)",
       }}
     >
-      <h2 className="fixed top-2 left-6 text-lg font-bold mix-blend-difference md:hidden">
+      <h2 className="z-50 fixed top-2 left-6 text-lg font-bold mix-blend-difference md:hidden">
         {main.header}
       </h2>
 
