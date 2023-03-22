@@ -37,7 +37,7 @@ const information = {
     ],
     design: [{ name: "Figma", value: 30 }],
   },
-  proyects: [
+  projects: [
     {
       name: "Properties & You",
       shortDescription: `Aplicacion web donde puedes encontrar diversas inmoviliarias, como casas, departamentos, fincas, entre otros

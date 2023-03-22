@@ -4,38 +4,29 @@ import information from "../../information";
 export default function About({}) {
   const { about } = information.personal;
   return (
-    <div className="h-screen p-2 " id="about">
-      <div className="h-[10%] p-2 text-center text-txThird">
-        <h1 className="text-3xl font-bold">Sobre mi</h1>
-        <p className="text-txThird/50">Mi introduccion</p>
+    <div className="bg-main text-textOne min-h-screen px-6 sm:min-h-[600px]" id="about">
+      <div className="flex flex-col items-center justify-center pt-6 pb-5 md:pt-[5.5rem]">
+        <h1 className="text-3xl font-bold">About me</h1>
+        <p className="text-textThree">My Introduction</p>
       </div>
-
-      <div className="h-[75%] flex flex-col items-center justify-center md:flex-row-reverse md:px-10">
-        <img className="w-2/3 my-4 rounded-lg sm:w-[200px] md:w-[300px]" src={about.image} />
-
-        <p className="my-4 p-2 text-xl text-txThird/600 text-center md:mx-6">
-          {about.description}
-        </p>
+      <div className="flex flex-col-reverse gap-6 min-h-[60vh] md:flex-row md:px-[50px] md:gap-12">
+        <section className="flex-1 flex flex-col items-center justify-center gap-8">
+          <p className="text-xl text-justify">{about.description}</p>
+          <a
+            href={about.cv.eng}
+            download="Cv_Yhonier_Alegria"
+            className=" bg-txSecond w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hvSecond"
+          >
+            <span className="pl-2 text-lg text-white font-bold whitespace-nowrap">
+              Descargar CV
+            </span>
+            <icons.Download fill="#fff" />
+          </a>
+        </section>
+        <picture className="grid place-content-center">
+          <img className="max-w-[300px] md:max-w-[500px] rounded" src={about.image} width={400} height={400}/>
+        </picture>
       </div>
-
-      <div className="h-[15%] flex items-center justify-center">
-        <a
-          href={about.cv.eng}
-          download="Cv_Yhonier_Alegria"
-          className=" bg-txSecond w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hvSecond"
-        >
-          <span className="pl-2 text-lg text-white font-bold whitespace-nowrap">
-            Descargar CV
-          </span>
-          <icons.Download fill="#fff" />
-        </a>
-      </div>
-
-      {/* <iframe
-        src={about.cv.spa}
-        style={{width:"100%", height:"700px"}}
-        frameborder="0"
-      ></iframe> */}
     </div>
   );
 }

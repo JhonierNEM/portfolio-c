@@ -35,7 +35,7 @@ export default function Menu() {
             <Item to="#about" title="Sobre mi" icon="about"/>
             <Item to="#skills" title="Habilidades" icon="note/stroke"/>
            {/*  <Item to="#services" title="Servicios" icon="service"/> */}
-            <Item to="#proyects" title="Proyectos" icon="code"/>
+            <Item to="#projects" title="Proyectos" icon="code"/>
             <Item to="#contactme" title="Contactame" icon="contact/stroke"/>
           </div>
           <div className="h-1/5 border-t w-1/2 self-center flex p-2  justify-between">
