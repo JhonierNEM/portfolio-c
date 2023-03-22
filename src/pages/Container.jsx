@@ -10,7 +10,7 @@ export default function Container() {
       <Main />
       <Projects />
       <About />
-      <Skills />
+      {/* <Skills /> */}
       <ContactMe />
     </div>
   );
