@@ -9,7 +9,7 @@ export default function Menu() {
     <Popover>
       <Popover.Button className="w-12 h-12 mt-1">
         <span className="sr-only">Menu</span>
-        <Squares2X2Icon/>
+        <Squares2X2Icon className="stroke-white mix-blend-difference"/>
       </Popover.Button>
 
       <Transition
@@ -32,10 +32,10 @@ export default function Menu() {
           <div className="h-4/5 p-2 space-y-3 flex flex-col rounded-lg mb-2 sm:text-xl ">
             
             <Item to="#home" title="Inicio" icon="home"/>
-            <Item to="#about" title="Sobre mi" icon="about"/>
-            <Item to="#skills" title="Habilidades" icon="note/stroke"/>
-           {/*  <Item to="#services" title="Servicios" icon="service"/> */}
             <Item to="#projects" title="Proyectos" icon="code"/>
+            <Item to="#about" title="Sobre mi" icon="about"/>
+            {/* <Item to="#skills" title="Habilidades" icon="note/stroke"/> */}
+           {/*  <Item to="#services" title="Servicios" icon="service"/> */}
             <Item to="#contactme" title="Contactame" icon="contact/stroke"/>
           </div>
           <div className="h-1/5 border-t w-1/2 self-center flex p-2  justify-between">
