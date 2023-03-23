@@ -50,18 +50,18 @@ export default function ContactMe() {
   }, [form.view]);
 
   return (
-    <div id="contactme" className="h-screen p-2">
-      <div className="h-[10%] p-2 text-center text-tprimary">
+    <div id="contactme" className="bg-main text-textOne min-h-screen px-6">
+      <div className="flex flex-col items-center justify-center pt-6 md:pt-[5.5rem]">
         <h1 className="text-3xl font-bold">Contactame</h1>
-        <p className="text-txThird/50"></p>
+        <p className="text-textThree"></p>
       </div>
 
       <form
         action=""
         onSubmit={handleSubmit}
-        className=" h-[80%] py-2 px-4 my-2 xl:px-[10%]"
+        className="flex flex-col md:flex-row gap-4"
       >
-        <div className="md:flex md:space-x-4">
+        <section className="md:flex-1 p-5">
           <Input
             type="value"
             name="name"
@@ -76,28 +76,32 @@ export default function ContactMe() {
             value={form.email}
             label="Correo"
           />
-        </div>
-        <Input
-          type="value"
-          name="subject"
-          changeValue={handleChangeForm}
-          value={form.subject}
-          label="Asunto"
-        />
-        <div className="w-full">
-          <TextArea
-            name="message"
-            cols="30"
-            rows="10"
+          <Input
+            type="value"
+            name="subject"
             changeValue={handleChangeForm}
-            value={form.message}
+            value={form.subject}
+            label="Asunto"
           />
-        </div>
-        <div className="w-full flex justify-center py-2 my-4 md:my-2">
-          <Button />
-        </div>
+          <div className="hidden place-content-center md:grid">
+            <Button />
+          </div>
+        </section>
+        <section className="md:flex-1 p-5">
+          <TextArea
+          name="message"
+          cols={30}
+          rows={10}
+          changeValue={handleChangeForm}
+          value={form.message}
+          />
+          <div className="grid place-content-center md:hidden">
+            <Button />
+          </div>
+        </section>
       </form>
 
+      
       <Success
         status={response.status}
         message={response.message}
@@ -105,7 +109,7 @@ export default function ContactMe() {
         setView={() => {
           setForm({ ...form, view: false });
         }}
-      />
+      /> 
     </div>
   );
 }
