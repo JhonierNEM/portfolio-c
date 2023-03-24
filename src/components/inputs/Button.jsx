@@ -19,7 +19,7 @@ export default function Button({click,type}) {
           </Svg>
         </Wrapper>
       </Wrapper1>
-      <Span>Contactar</Span>
+      <Span>Contact</Span>
     </Send>
   );
 }

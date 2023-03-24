@@ -7,15 +7,11 @@ const information = {
       myName: "Yhonier",
       image: images.main.MainImage,
       profession: "Full Stack Developer",
-      description: `Me encanta la programación, quiero explorar mas este mundo y disfrutar la travesía "Siempre  estaré dispuesto a mejorar"`,
+      description: `I love programming, I want to explore this world more and enjoy the journey "I will always be willing to improve".`,
     },
     about: {
       image: images.main.AboutImage,
-      description: `Desarrollador web con habilidades en HTML, CSS, JavaScript,
-      TypeScript. Tengo experiencia en ReactJS, Cuento con
-      una fuerte comprensión del diseño responsivo, con
-      habilidades en metodologías ágiles y control de
-      versiones usando Git.`,
+      description: `Web developer with skills in HTML, CSS, JavaScript, TypeScript. I have experience in ReactJS, I have a strong understanding of responsive design, with skills in agile methodologies and version control using Git.`,
       cv: {
         eng: documents.cvAlegriaEng,
         spa: documents.cvAlegira,
@@ -40,8 +36,7 @@ const information = {
   projects: [
     {
       name: "Properties & You",
-      shortDescription: `Aplicacion web donde puedes encontrar diversas inmoviliarias, como casas, departamentos, fincas, entre otros
-      las cuales puedes comprar o alquilar, tambien esta la opcion de vender o alquilar una de ellas si te es posible`,
+      shortDescription: `Web application where you can find various real estate, such as houses, apartments, farms, among others, which you can buy or rent. which you can buy or rent, there is also the option to sell or rent one of them if possible.`,
       image: images.PropertiesYou.landing,
       gitLink: "https://github.com/JhonierNEM/Proyecto-Final-Frontend",
       demoLink: "https://proyecto-final-frontend-jhoniernem.vercel.app/",
@@ -51,8 +46,7 @@ const information = {
     },
     {
       name: "Dog App",
-      shortDescription: `Aplicacion donde puede visualizar las diferentes razas de perros existentes, se pueden realizar busquedas y filtrado,
-      ademas se puede crear una nueva raza`,
+      shortDescription: `Application where you can visualize the different existing dog breeds, you can search and filter, you can also create a new breed.`,
       image: images.DogsApp.DogsApp,
       gitLink: "https://github.com/JhonierNEM/PI-Dogs-main",
       demoLink: "",
@@ -62,8 +56,7 @@ const information = {
     },
     {
       name: "Weather App",
-      shortDescription: `Aplicacion  del clima, mediante una peticion a una api externa se puede visualizar los datos sobre el clima de una lugar determnado.
-      `,
+      shortDescription: `Weather application, by means of a request to an external api you can visualize the weather data of a given place.`,
       image: images.WeatherApp.WeatherApp,
       gitLink: "https://github.com/JhonierNEM/weather-app",
       demoLink: "",

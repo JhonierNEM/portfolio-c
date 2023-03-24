@@ -18,7 +18,7 @@ export default function About({}) {
             className=" bg-txSecond w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hvSecond"
           >
             <span className="pl-2 text-lg text-white font-bold whitespace-nowrap">
-              Descargar CV
+              Download CV
             </span>
             <icons.Download fill="#fff" />
           </a>

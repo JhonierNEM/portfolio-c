@@ -52,7 +52,7 @@ export default function ContactMe() {
   return (
     <div id="contactme" className="bg-main text-textOne min-h-screen px-6">
       <div className="flex flex-col items-center justify-center pt-6 md:pt-[5.5rem]">
-        <h1 className="text-3xl font-bold">Contactame</h1>
+        <h1 className="text-3xl font-bold">Contact</h1>
         <p className="text-textThree"></p>
       </div>
 
@@ -67,21 +67,21 @@ export default function ContactMe() {
             name="name"
             changeValue={handleChangeForm}
             value={form.name}
-            label="Nombre"
+            label="Name"
           />
           <Input
             type="email"
             name="email"
             changeValue={handleChangeForm}
             value={form.email}
-            label="Correo"
+            label="Email"
           />
           <Input
             type="value"
             name="subject"
             changeValue={handleChangeForm}
             value={form.subject}
-            label="Asunto"
+            label="Subject"
           />
           <div className="hidden place-content-center md:grid">
             <Button />
