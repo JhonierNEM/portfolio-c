@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export default function TextArea({ name, cols, rows, changeValue, value }) {
   return (
-    <div className="w-full">
+    <div className="w-full md:h-full">
       <textarea
-        className="bg-bgFirst w-full p-[8px] text-txThird/90 outline-none rounded-lg resize-none overflow-hidden shadow focus:border-txSecond focus:border sm:h-[150px] md:h-auto"
+        className="bg-bgFirst w-full p-[8px] text-txThird/90 outline-none rounded-lg resize-none overflow-hidden shadow focus:border-txSecond focus:border sm:h-[150px] md:h-full"
         required
         name={name}
         cols={cols}

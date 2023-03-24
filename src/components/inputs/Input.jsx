@@ -29,7 +29,7 @@ const Field = styled.input`
   width: 100%;
   padding: 15px 0;
   font-size: 18px;
-  color: #242424;
+  color: #ffffff;
   &:focus,
   &:valid {
     outline: 0;
