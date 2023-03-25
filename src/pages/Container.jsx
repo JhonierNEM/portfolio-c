@@ -2,7 +2,6 @@ import Main from "./main/Main";
 import ContactMe from "./contact/ContactMe";
 import Projects from "./projects/Projects";
 import About from "./about/About";
-import Skills from "./skills/Skills";
 
 export default function Container() {
   return (

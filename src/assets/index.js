@@ -1,9 +1,12 @@
-import PropertiesYou from "./images/PropertiesYou.PNG"
-import UserIcon from "./images/UserIcon.jpg"
-import MainImage from "./images/MainImage.png"
-import AboutImage from "./images/AboutImage.jpg"
-import DogsApp from "./images/DogsApp.png"
-import WeatherApp from "./images/WeatherApp.PNG"
+//Images
+import PY_Landing from "./images/propertiesyou/PY_Landing.jpg"
+
+import TW_Main from "./images/todaysweather/TW_Main.jpg"
+
+import DA_Landing from "./images/dogapp/DA_Landing.png"
+
+import US_About from "./images/a-personal/US_About.jpg"
+import US_Main from "./images/a-personal/US_Main.png"
 
 import LinkedIn from "./icons/LinkedIn"
 import GitHub from "./icons/GitHub"
@@ -29,24 +32,23 @@ import cvAlegriaEng from "./documents/CV_Alegria_ENG.pdf"
 import cvAlegira from "./documents/CV_Alegria.pdf"
 
 export const  images = {
-    main: {
-       UserIcon,
-       MainImage,
-       AboutImage
-    },
-    PropertiesYou:{
-        landing: PropertiesYou
-    },
-    DogsApp:{
-        DogsApp
-    },
-    WeatherApp:{
-        WeatherApp
-    },
     alert:{
         iconsSuccess,
         iconsWarning
     }
+}
+export const IMGs_US = {
+    main: US_Main,
+    about: US_About
+}
+export const IMGs_PY = {
+    landing: PY_Landing, 
+}
+export const IMGs_TW = {
+    main:TW_Main
+}
+export const IMGs_DA = {
+    landing: DA_Landing
 }
 
 export const icons = {
