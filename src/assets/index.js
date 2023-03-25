@@ -8,6 +8,9 @@ import DA_Landing from "./images/dogapp/DA_Landing.png"
 import US_About from "./images/a-personal/US_About.jpg"
 import US_Main from "./images/a-personal/US_Main.png"
 
+import iconsSuccess from "./images/others/iconsSuccess.png"
+import iconsWarning from "./images/others/iconsWarning.png"
+
 import LinkedIn from "./icons/LinkedIn"
 import GitHub from "./icons/GitHub"
 import Instagram from "./icons/Instagram"
@@ -18,8 +21,6 @@ import Contact from "./icons/Contact"
 import Service from "./icons/Service"
 import Note from "./icons/Note"
 import NewWindow from "./icons/NewWindow"
-import iconsSuccess from "./images/iconsSuccess.png"
-import iconsWarning from "./images/iconsWarning.png"
 import Download from "./icons/Download"
 import Up from "./icons/Up"
 import Brackets from "./icons/Brackets"
@@ -31,12 +32,6 @@ import BoxUp from "./icons/BoxUp"
 import cvAlegriaEng from "./documents/CV_Alegria_ENG.pdf"
 import cvAlegira from "./documents/CV_Alegria.pdf"
 
-export const  images = {
-    alert:{
-        iconsSuccess,
-        iconsWarning
-    }
-}
 export const IMGs_US = {
     main: US_Main,
     about: US_About
@@ -50,7 +45,12 @@ export const IMGs_TW = {
 export const IMGs_DA = {
     landing: DA_Landing
 }
-
+export const IMGs_Others = {
+    alert:{
+        iconsSuccess,
+        iconsWarning
+    }
+}
 export const icons = {
     About,
     BoxUp,

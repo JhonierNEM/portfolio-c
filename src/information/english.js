@@ -1,4 +1,4 @@
-import { IMGs_PY, IMGs_DA, IMGs_TW, IMGs_US } from "../assets";
+import { IMGs_PY, IMGs_DA, IMGs_TW, IMGs_US, documents } from "../assets";
 
 export const pages = {
   MAIN: {
@@ -20,6 +20,7 @@ export const pages = {
     img: IMGs_US.about,
     descrip:
       "Web developer with skills in HTML, CSS, JavaScript, TypeScript. I have experience in ReactJS, I have a strong understanding of responsive design, with skills in agile methodologies and version control using Git.",
+    cv:documents.cvAlegriaEng
   },
   CONTACTME: {
     title: "Contact Me",

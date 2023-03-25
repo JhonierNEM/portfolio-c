@@ -13,7 +13,7 @@ export default function About({}) {
         <section className="flex-1 flex flex-col items-center justify-center gap-8">
           <p className="text-xl text-justify">{ABOUTME.descrip}</p>
           <a
-            href={""}
+            href={ABOUTME.cv}
             download="Cv_Yhonier_Alegria"
             className=" bg-txSecond w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hvSecond"
           >
