@@ -1,9 +1,12 @@
+//Components
+import Success from "../../components/alerts/Success";
+import H_Title from "../../components/headers/H_Title";
 import Input from "../../components/inputs/Input";
 import TextArea from "../../components/inputs/TextArea";
 import Button from "../../components/inputs/Button";
+
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
-import Success from "../../components/alerts/Success";
 
 const Form = {
   name: "",
@@ -51,10 +54,7 @@ export default function ContactMe() {
 
   return (
     <div id="contactme" className="bg-main text-textOne min-h-screen px-6">
-      <div className="flex flex-col items-center justify-center pt-6 md:pt-[5.5rem]">
-        <h1 className="text-3xl font-bold">Contact</h1>
-        <p className="text-textThree"></p>
-      </div>
+      <H_Title title="Contact Me" sub="Send me a message"/>
 
       <form
         action=""
