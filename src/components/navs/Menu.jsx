@@ -41,7 +41,7 @@ export default function Menu() {
           <div className="h-1/5 border-t w-1/2 self-center flex p-2  justify-between">
             <a
               className="w-10 h-10 rounded"
-              href="https://www.linkedin.com/in/yhonier-esteban-caype-alegria-2299a6248"
+              href="https://www.linkedin.com/in/yhonier-c-alegria"
               target="_blank"
               rel="noreferrer"
             >
@@ -51,7 +51,7 @@ export default function Menu() {
             </a>
             <a
               className="w-10 h-10 rounded"
-              href="https://github.com/JhonierNEM"
+              href="https://github.com/SourerDev"
               target="_blank"
               rel="noreferrer"
             >

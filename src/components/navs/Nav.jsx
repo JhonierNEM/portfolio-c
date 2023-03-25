@@ -27,7 +27,7 @@ export default function Nav() {
         <div id="socialnetwork" className="flex gap-2">
           <a
             className=""
-            href="https://www.linkedin.com/in/yhonier-esteban-caype-alegria-2299a6248"
+            href="https://www.linkedin.com/in/yhonier-c-alegria"
             target="_blank"
             rel="noreferrer"
           >
@@ -35,7 +35,7 @@ export default function Nav() {
           </a>
           <a
             className=""
-            href="https://github.com/JhonierNEM"
+            href="https://github.com/SourerDev"
             target="_blank"
             rel="noreferrer"
           >
