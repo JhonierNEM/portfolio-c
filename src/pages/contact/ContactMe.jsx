@@ -1,10 +1,9 @@
 //Components
 import Success from "../../components/alerts/Success";
-import H_Title from "../../components/headers/H_Title";
+import HTitle from "../../components/headers/HTitle";
 import Input from "../../components/inputs/Input";
 import TextArea from "../../components/inputs/TextArea";
-import Button from "../../components/inputs/Button";
-
+import BContactme from "../../components/form/buttons/BContactme";
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
 
@@ -54,7 +53,7 @@ export default function ContactMe() {
 
   return (
     <div id="contactme" className="bg-main text-textOne min-h-screen px-6">
-      <H_Title title="Contact Me" sub="Send me a message"/>
+      <HTitle title="Contact Me" sub="Send me a message" />
 
       <form
         action=""
@@ -84,24 +83,23 @@ export default function ContactMe() {
             label="Subject"
           />
           <div className="hidden place-content-center md:grid">
-            <Button />
+            <BContactme />
           </div>
         </section>
         <section className="md:flex-1 p-5">
           <TextArea
-          name="message"
-          cols={30}
-          rows={10}
-          changeValue={handleChangeForm}
-          value={form.message}
+            name="message"
+            cols={30}
+            rows={10}
+            changeValue={handleChangeForm}
+            value={form.message}
           />
           <div className="grid place-content-center md:hidden">
-            <Button />
+            <BContactme />
           </div>
         </section>
       </form>
 
-      
       <Success
         status={response.status}
         message={response.message}
@@ -109,7 +107,7 @@ export default function ContactMe() {
         setView={() => {
           setForm({ ...form, view: false });
         }}
-      /> 
+      />
     </div>
   );
 }

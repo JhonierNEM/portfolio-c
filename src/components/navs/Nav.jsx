@@ -1,4 +1,5 @@
-import { icons } from "../../assets";
+import { IconType } from "../../assets";
+import BIcon from "../form/buttons/BIcon";
 
 export default function Nav() {
   return (
@@ -12,35 +13,39 @@ export default function Nav() {
         </div>
         <ul className="flex gap-6">
           <li>
-            <a className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md" href="#projects">Projects</a>
+            <a
+              className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md"
+              href="#projects"
+            >
+              Projects
+            </a>
           </li>
           <li>
-            <a className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md" href="#about">About</a>
+            <a
+              className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md"
+              href="#about"
+            >
+              About
+            </a>
           </li>
           <li>
-            <a className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md" href="#contactme">Contact</a>
+            <a
+              className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md"
+              href="#contactme"
+            >
+              Contact
+            </a>
           </li>
           <li>
             <a href=""></a>
           </li>
         </ul>
         <div id="socialnetwork" className="flex gap-2">
-          <a
-            className=""
+          <BIcon
+            icon={IconType.LINKEDIN}
             href="https://www.linkedin.com/in/yhonier-c-alegria"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <icons.LinkedIn className="w-6 h-6 fill-txFirst hover:fill-blue-800 transition-all ease-in hover:scale-125" />
-          </a>
-          <a
-            className=""
-            href="https://github.com/SourerDev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <icons.GitHub className="w-6 h-6 fill-txFirst hover:fill-gray-300 transition-all ease-in hover:scale-125" />
-          </a>
+          />
+          <BIcon icon={IconType.GITHUB} href="https://github.com/SourerDev" />
         </div>
       </nav>
     </div>

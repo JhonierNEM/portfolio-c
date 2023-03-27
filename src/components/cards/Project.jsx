@@ -1,5 +1,7 @@
-import { icons } from "../../assets";
-import { classNames } from "../inputs/Progress";
+//Components
+import BIcon from "../form/buttons/BIcon"
+
+import { IconType } from "../../assets";
 
 export default function Proyect({
   image,
@@ -18,12 +20,8 @@ export default function Proyect({
           <p className="font-light max-h-[70px] overflow-hidden">{description}</p>
         </section>
         <section className="h-full flex flex-col items-end justify-evenly">
-          <a href={gitLink} target="_blank" rel="noopener noreferrer">
-            <icons.GitHub className="w-8 h-8 fill-white hover:fill-hoverOne transition-all ease-in hover:scale-125"/>
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <icons.NewWindow className="w-8 h-8 fill-white hover:fill-hoverOne transition-all ease-in hover:scale-125" />
-          </a>
+          <BIcon className="w-7 hover:fill-hoverOne" icon={IconType.GITHUB} href={gitLink}/>
+          <BIcon className="w-7 hover:fill-hoverOne" icon={IconType.NEW_WINDOW} />
         </section>
       </div>
     </div>

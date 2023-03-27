@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Button({click,type}) {
+export default function B_Contactme(type, click) {
   return (
     <Send type={type} onClick={click} className="bg-bgSecond">
       <Wrapper1>
@@ -32,18 +32,18 @@ const Send = styled.button`
   padding-left: 0.9em;
   display: flex;
   align-items: center;
-  border:none;
+  border: none;
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.2s;
-  &:hover div{
+  &:hover div {
     animation: fly-1 0.6s ease-in-out infinite alternate;
   }
   &:hover svg {
     transform: translateX(50px) rotate(45deg) scale(1.1);
   }
   &:hover span {
-    transform: translateX(120%);
+    transform: translateX(200%);
   }
   &:active {
     transform: scale(0.95);

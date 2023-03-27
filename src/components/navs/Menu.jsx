@@ -1,8 +1,11 @@
+//components
+import Item from "./items/Item";
+import BIcon from "../form/buttons/BIcon";
+
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Squares2X2Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { icons } from "../../assets";
-import Item from "./items/Item";
+import { IconType } from "../../assets";
 
 export default function Menu() {
   return (
@@ -31,35 +34,17 @@ export default function Menu() {
           </Popover.Button>
           <div className="h-4/5 p-2 space-y-3 flex flex-col rounded-lg mb-2 sm:text-xl ">
             
-            <Item to="#home" title="Inicio" icon="home"/>
-            <Item to="#projects" title="Proyectos" icon="code"/>
-            <Item to="#about" title="Sobre mi" icon="about"/>
+            <Item to="#home" title="Inicio" IconType={IconType.HOME}/>
+            <Item to="#projects" title="Proyectos" IconType={IconType.CODE}/>
+            <Item to="#about" title="Sobre mi" IconType={IconType.ABOUT}/>
             {/* <Item to="#skills" title="Habilidades" icon="note/stroke"/> */}
            {/*  <Item to="#services" title="Servicios" icon="service"/> */}
-            <Item to="#contactme" title="Contactame" icon="contact/stroke"/>
+            <Item to="#contactme" title="Contactame" IconType={IconType.CONTACT + "/stroke"} className="stroke-black"/>
           </div>
           <div className="h-1/5 border-t w-1/2 self-center flex p-2  justify-between">
-            <a
-              className="w-10 h-10 rounded"
-              href="https://www.linkedin.com/in/yhonier-c-alegria"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <icons.LinkedIn
-                className="rounded hover:fill-txSecond"
-              />
-            </a>
-            <a
-              className="w-10 h-10 rounded"
-              href="https://github.com/SourerDev"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <icons.GitHub className="hover:fill-txSecond"/>
-            </a>
-            <button className="w-10 h-10 rounded">
-              <icons.Instagram className="hover:fill-txSecond"/>
-            </button>
+            <BIcon className="w-8 hover:fill-hoverOne" icon={IconType.LINKEDIN} href="https://www.linkedin.com/in/yhonier-c-alegria"/>
+            <BIcon className="w-8 hover:fill-hoverOne" icon={IconType.GITHUB} href="https://github.com/SourerDev"/>
+            {/* <BIcon className="hover:fill-hoverOne" icon={IconType.INSTAGRAM}/> */}
           </div>
         </Popover.Panel>
       </Transition>

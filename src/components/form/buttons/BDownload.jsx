@@ -1,35 +1,23 @@
-import styled from "styled-components";
+//components
+import BIcon from "./BIcon";
 
-export default function B_Download() {
+import { IconType } from "../../../assets";
+
+export default function BDownload({file}) {
   return (
-    <Button data-tooltip="Size: 20Mb" class="button">
-      <div class="button-wrapper">
-        <div class="text">Download</div>
-        <span class="icon">
-          <svg
-            viewBox="0 0 24 24"
-            preserveAspectRatio="xMidYMid meet"
-            height="2em"
-            width="2em"
-            role="img"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
-              stroke-width="2"
-              stroke-linejoin="round"
-              stroke-linecap="round"
-              stroke="currentColor"
-              fill="none"
-            ></path>
-          </svg>
-        </span>
-      </div>
-    </Button>
+    <a
+      href={file}
+      download="Cv_Yhonier_Alegria"
+      className=" bg-txSecond w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hvSecond"
+    >
+      <span className="pl-2 text-lg text-white font-bold whitespace-nowrap">
+        Download CV
+      </span>
+      <BIcon icon={IconType.DOWNLOAD}/>
+    </a>
   );
 }
-
+/* 
 const Button = styled.a`
   --width: 100px;
   --height: 35px;
@@ -134,4 +122,4 @@ const Button = styled.a`
 :hover:before {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
-`
+` */
