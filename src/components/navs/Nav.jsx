@@ -36,9 +36,6 @@ export default function Nav() {
               Contact
             </a>
           </li>
-          <li>
-            <a href=""></a>
-          </li>
         </ul>
         <div id="socialnetwork" className="flex gap-2">
           <BIcon
