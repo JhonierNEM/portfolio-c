@@ -1,5 +1,6 @@
 //componets
 import BIcon from "../form/buttons/BIcon";
+import { IconType } from "../../assets";
 
 export default function Footer() {
   return (
@@ -9,8 +10,17 @@ export default function Footer() {
       </section>
       <section></section>
       <section className="flex gap-2">
-        <BIcon icon="GitHub" className="" />
-        <BIcon icon="LinkedIn" className="" />
+        {" "}
+        <BIcon
+          icon={IconType.LINKEDIN}
+          href="https://www.linkedin.com/in/yhonier-c-alegria"
+          className="hover:bg-blue-700 rounded hover:p-1"
+        />
+        <BIcon
+          icon={IconType.GITHUB}
+          href="https://github.com/SourerDev"
+          className="hover:bg-black rounded hover:p-1"
+        />
       </section>
     </footer>
   );
