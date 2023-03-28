@@ -41,8 +41,9 @@ export default function Nav() {
           <BIcon
             icon={IconType.LINKEDIN}
             href="https://www.linkedin.com/in/yhonier-c-alegria"
+            className="hover:bg-blue-700 rounded hover:p-1"
           />
-          <BIcon icon={IconType.GITHUB} href="https://github.com/SourerDev" />
+          <BIcon icon={IconType.GITHUB} href="https://github.com/SourerDev" className="hover:bg-black rounded hover:p-1"/>
         </div>
       </nav>
     </div>

@@ -9,7 +9,7 @@ export default function BIcon({
 }) {
   const [ICON, stroke] = icon.split("/");
   const Icon = getIcon(ICON);
-  const ClassName = "fill-white w-6 h-auto transition-all ease-in hover:scale-125";
+  const ClassName = "fill-white w-7 h-auto transition-all ease-in hover:scale-125";
 
   if (!href)
     return (

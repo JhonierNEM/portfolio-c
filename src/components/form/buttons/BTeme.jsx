@@ -23,7 +23,7 @@ export default function Teme() {
   };
 
   return (
-    <button onClick={ThemeChange} className="w-12 h-12 flex items-center justify-center p-1 rounded-full shadow hidden">
+    <button onClick={ThemeChange} className="w-12 h-12 items-center justify-center p-1 rounded-full shadow hidden">
       <MoonIcon stroke="#242424" />
     </button>
   );

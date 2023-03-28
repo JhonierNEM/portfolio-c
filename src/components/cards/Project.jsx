@@ -20,8 +20,8 @@ export default function Proyect({
           <p className="font-light max-h-[70px] overflow-hidden">{description}</p>
         </section>
         <section className="h-full flex flex-col items-end justify-evenly">
-          <BIcon className="w-7 hover:fill-hoverOne" icon={IconType.GITHUB} href={gitLink}/>
-          <BIcon className="w-7 hover:fill-hoverOne" icon={IconType.NEW_WINDOW} />
+          <BIcon className="w-9 hover:bg-hoverOne rounded hover:p-1 hover:shadow-hoverOne hover:shadow" icon={IconType.GITHUB} href={gitLink}/>
+          <BIcon className="w-9 hover:bg-hoverOne rounded hover:p-1 hover:shadow-hoverOne hover:shadow" icon={IconType.NEW_WINDOW} />
         </section>
       </div>
     </div>
