@@ -1,8 +1,8 @@
 //Components
 import Success from "../../components/alerts/Success";
 import HTitle from "../../components/headers/HTitle";
-import Input from "../../components/inputs/Input";
-import TextArea from "../../components/inputs/TextArea";
+import Input from "../../components/form/inputs/Input";
+import TextArea from "../../components/form/textareas/TextArea";
 import BContactme from "../../components/form/buttons/BContactme";
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
