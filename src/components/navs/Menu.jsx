@@ -12,7 +12,7 @@ export default function Menu() {
     <Popover>
       <Popover.Button className="w-12 h-12 mt-1">
         <span className="sr-only">Menu</span>
-        <Squares2X2Icon className="stroke-white mix-blend-difference"/>
+        <Squares2X2Icon className="stroke-tx-main "/>
       </Popover.Button>
 
       <Transition
@@ -26,7 +26,7 @@ export default function Menu() {
       >
         <Popover.Panel
           focus
-          className="h-screen bg-bgFirst m-2 flex flex-col rounded-lg fixed inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden z-50"
+          className="h-screen bg-main text-tx-main m-2 flex flex-col rounded-lg fixed inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden z-50"
         >
           <Popover.Button className="w-10 h-10  hover:shadow-sm rounded-full self-end outline-none">
             <span className="sr-only">Menu</span>
@@ -39,11 +39,11 @@ export default function Menu() {
             <Item to="#about" title="Sobre mi" IconType={IconType.ABOUT}/>
             {/* <Item to="#skills" title="Habilidades" icon="note/stroke"/> */}
            {/*  <Item to="#services" title="Servicios" icon="service"/> */}
-            <Item to="#contactme" title="Contactame" IconType={IconType.CONTACT + "/stroke"} className="stroke-black"/>
+            <Item to="#contactme" title="Contactame" IconType={IconType.CONTACT + "/stroke"} className="stroke-tx-main"/>
           </div>
           <div className="h-1/5 border-t w-1/2 self-center flex p-2  justify-between">
-            <BIcon className="w-8 hover:fill-hoverOne" icon={IconType.LINKEDIN} href="https://www.linkedin.com/in/yhonier-c-alegria"/>
-            <BIcon className="w-8 hover:fill-hoverOne" icon={IconType.GITHUB} href="https://github.com/SourerDev"/>
+            <BIcon className="w-8 hover:fill-hv-main" icon={IconType.LINKEDIN} href="https://www.linkedin.com/in/yhonier-c-alegria"/>
+            <BIcon className="w-8 hover:fill-hv-main" icon={IconType.GITHUB} href="https://github.com/SourerDev"/>
             {/* <BIcon className="hover:fill-hoverOne" icon={IconType.INSTAGRAM}/> */}
           </div>
         </Popover.Panel>

@@ -8,9 +8,9 @@ export default function BDownload({file}) {
     <a
       href={file}
       download="Cv_Yhonier_Alegria"
-      className=" bg-txSecond w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hvSecond"
+      className=" bg-second w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hv-main"
     >
-      <span className="pl-2 text-lg text-white font-bold whitespace-nowrap">
+      <span className="pl-2 text-lg font-bold whitespace-nowrap">
         Download CV
       </span>
       <BIcon icon={IconType.DOWNLOAD}/>

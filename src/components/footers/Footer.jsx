@@ -4,7 +4,7 @@ import { IconType } from "../../assets";
 
 export default function Footer() {
   return (
-    <footer className="bg-main text-textOne border-t-2 border-black py-4 px-8 flex justify-between">
+    <footer className="bg-main text-tx-main border-t-2 border-black py-4 px-8 flex justify-between">
       <section>
         <span>by Yhonier Alegria</span>
       </section>

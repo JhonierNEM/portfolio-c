@@ -3,7 +3,7 @@ import BIcon from "../form/buttons/BIcon";
 
 export default function Nav() {
   return (
-    <div className="hidden text-textOne max-h-[5rem] h-[4rem] fixed top-0 left-0 w-full z-50 md:block px-2 pt-2 backdrop-blur-sm">
+    <div className="hidden text-tx-main max-h-[5rem] h-[4rem] fixed top-0 left-0 w-full z-50 md:block px-2 pt-2 backdrop-blur-sm">
       <nav className="h-full flex items-center justify-between px-14 rounded shadow-lg shadow-black bg-main">
         <div>
           <a href="#home">
@@ -14,7 +14,7 @@ export default function Nav() {
         <ul className="flex gap-6">
           <li>
             <a
-              className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md"
+              className="py-2 px-6 hover:bg-hv-main hover:shadow shadow-white/50 rounded-md"
               href="#projects"
             >
               Projects
@@ -22,7 +22,7 @@ export default function Nav() {
           </li>
           <li>
             <a
-              className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md"
+              className="py-2 px-6 hover:bg-hv-main hover:shadow shadow-white/50 rounded-md"
               href="#about"
             >
               About
@@ -30,7 +30,7 @@ export default function Nav() {
           </li>
           <li>
             <a
-              className="py-2 px-6 hover:bg-black hover:shadow shadow-white/50 rounded-md"
+              className="py-2 px-6 hover:bg-hv-main hover:shadow shadow-white/50 rounded-md"
               href="#contactme"
             >
               Contact

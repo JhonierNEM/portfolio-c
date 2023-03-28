@@ -7,7 +7,7 @@ import { pages } from "../../information/english";
 export default function About({}) {
   const { ABOUTME} = pages;
   return (
-    <div className="bg-main text-textOne min-h-screen px-6 sm:min-h-[600px]" id="about">
+    <div className="bg-main text-tx-main min-h-screen px-6 sm:min-h-[600px]" id="about">
       <HTitle title={ABOUTME.title} sub={ABOUTME.sub}/>
       <div className="flex flex-col-reverse gap-6 min-h-[60vh] md:flex-row md:px-[50px] md:gap-12">
         <section className="flex-1 flex flex-col items-center justify-center gap-8">

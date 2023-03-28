@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default function B_Contactme(type, click) {
   return (
-    <Send type={type} onClick={click} className="bg-bgSecond">
+    <Send type={type} onClick={click} className="bg-second hover:bg-hv-main">
       <Wrapper1>
         <Wrapper>
           <Svg
