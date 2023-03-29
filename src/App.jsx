@@ -1,8 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Menu from "./components/navs/Menu";
-import Container from "./pages/Container";
 import Nav from "./components/navs/Nav";
 import Footer from "./components/footers/Footer";
+
+import Container from "./pages/Container";
+import DetailPJ from "./pages/projects/DetailPJ";
 
 function App() {
   return (
@@ -13,8 +15,9 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Container />} />
+        <Route path="/project/:id" element={<DetailPJ />} />
       </Routes>
-      <Footer/> 
+      <Footer />
     </div>
   );
 }
