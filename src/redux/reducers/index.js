@@ -1,1 +1,1 @@
-export {counter} from "./counter";
+export {counterRs} from "./counter";
