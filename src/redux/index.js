@@ -1,9 +1,10 @@
 import {configureStore} from "@reduxjs/toolkit"
-import {counterRs} from './reducers'
+import {counterRs,appRs} from './reducers'
 
 const store = configureStore({
     reducer:{
-        counter:counterRs
+        app: appRs,
+        counter:counterRs,
     }
 })
 
