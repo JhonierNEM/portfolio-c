@@ -4,7 +4,7 @@ import BIcon from "../form/buttons/BIcon";
 import { IconType } from "../../assets";
 import { Link } from "react-router-dom";
 
-export default function Proyect({ image, title, description, gitLink }) {
+export default function Proyect({ image, title, description, gitLink,id }) {
   return (
     <div className="min-h-[500px] col-span-1  relative overflow-hidden shadow-lg shadow-black z-1">
       <picture className="h-full w-full" /*  */>
@@ -23,7 +23,7 @@ export default function Proyect({ image, title, description, gitLink }) {
             icon={IconType.GITHUB}
             href={gitLink}
           />
-          <Link to={`/project/${title}`}>
+          <Link to={`/project/${id}`}>
             <BIcon
               className="w-9 hover:bg-hv-main rounded hover:p-1 hover:shadow-hv-main hover:shadow"
               icon={IconType.NEW_WINDOW}

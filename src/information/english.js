@@ -38,9 +38,9 @@ export const PROJECTS = [
     more: {
       view: true,
       description: "",
-      techStack: ["React 18.4.4"],
-      goals: [""],
-      contribuitors: ["username"],
+      techStack: ["React 18.2.0","Redux 4.2.0","Axios 1.1.3","Tailwindcss 3.2.3","Styled- Components 5.3.6","Sweetalert2 11.6.14"],
+      goals: [" Define the basic structure of the project (Front-End)"],
+      contribuitors: ["SourerDev","TomasPerez1","arturogutierrez11"],
       demoLink: "https://proyecto-final-frontend-jhoniernem.vercel.app/",
     },
   },
@@ -53,6 +53,9 @@ export const PROJECTS = [
     gitLink: "https://github.com/SourerDev/PI-Dogs-main",
     more: {
       view: false,
+      techStack: ["Pending..."],
+      goals: ["Pending..."],
+      contribuitors: ["SourerDev"],
       demoLink: "",
     },
   },
@@ -65,6 +68,9 @@ export const PROJECTS = [
     gitLink: "https://github.com/SourerDev/weather-app",
     more: {
       view: false,
+      techStack: ["Pending..."],
+      goals: ["Pendding..."],
+      contribuitors: ["SourerDev"],
       demoLink: "",
     },
   },

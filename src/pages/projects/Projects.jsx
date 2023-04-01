@@ -9,7 +9,7 @@ export default function Projects() {
     <div className="bg-main text-tx-main min-h-screen px-6" id="projects">
       <HTitle title="Projects" sub="Main Projects"/>
       <div className="grid md:grid-cols-2 gap-8 py-6">
-        {projects.map((project,i) => <Project key={i} image={project.URLs[0]} description={project.shortDescription} title={project.name} gitLink={project.gitLink}/>)}
+        {projects.map((project,i) => <Project key={i} id={project.id} image={project.URLs[0]} description={project.shortDescription} title={project.name} gitLink={project.gitLink}/>)}
       </div>
     </div>
   );
