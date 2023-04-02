@@ -1,3 +1,5 @@
+import BGoBack from "../../components/form/buttons/BGoBack";
+
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -7,7 +9,7 @@ import { PROJECTS } from "../../information/english";
 export default function DetailPJ() {
   const dispatch = useDispatch();
   const { id } = useParams();
-  const [project] = PROJECTS.filter(project => project.id === parseInt(id));
+  const [project] = PROJECTS.filter((project) => project.id === parseInt(id));
 
   useEffect(() => {
     dispatch(setViewNav(false));
@@ -20,6 +22,7 @@ export default function DetailPJ() {
     <div className="min-h-screen bg-main text-tx-main px-6  pt-6 md:px-16  md:pt-[5.5rem]">
       <div className="mb-3">
         <h2 className="text-3xl font-bold">{project.name}</h2>
+        <BGoBack />
       </div>
       <div className="flex flex-col gap-5 md:flex-row">
         <section>
@@ -38,7 +41,9 @@ export default function DetailPJ() {
           <ul className="list-disc">
             <h3 className="text-xl font-semibold">Tech Stack</h3>
             {project.more.techStack.map((tech, i) => (
-              <li className="whitespace-nowrap" key={i}>{tech}</li>
+              <li className="whitespace-nowrap" key={i}>
+                {tech}
+              </li>
             ))}
           </ul>
           <h3 className="text-xl font-semibold">Contribuitors</h3>
