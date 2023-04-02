@@ -2,7 +2,7 @@ import { IMGs_PY, IMGs_DA, IMGs_TW, IMGs_US, documents } from "../assets";
 
 export const pages = {
   MAIN: {
-    head:"Alegria",
+    head: "Alegria",
     title: "",
     user: "Yhonier Alegria",
     profession: "FrontEnd Developer",
@@ -20,7 +20,7 @@ export const pages = {
     img: IMGs_US.about,
     descrip:
       "Web developer with skills in HTML, CSS, JavaScript, TypeScript. I have experience in ReactJS, I have a strong understanding of responsive design, with skills in agile methodologies and version control using Git.",
-    cv:documents.cvAlegriaEng
+    cv: documents.cvAlegriaEng,
   },
   CONTACTME: {
     title: "Contact Me",
@@ -38,9 +38,17 @@ export const PROJECTS = [
     more: {
       view: true,
       description: "",
-      techStack: ["React 18.2.0","Redux 4.2.0","Axios 1.1.3","Tailwindcss 3.2.3","Styled- Components 5.3.6","Sweetalert2 11.6.14"],
+      techStack: [
+        "React 18.2.0",
+        "Redux 4.2.0",
+        "Axios 1.1.3",
+        "Tailwindcss 3.2.3",
+        "Styled- Components 5.3.6",
+        "Sweetalert2 11.6.14",
+        "Mercadopago 1.5.14"
+      ],
       goals: [" Define the basic structure of the project (Front-End)"],
-      contributors: ["SourerDev","TomasPerez1","arturogutierrez11"],
+      contributors: ["SourerDev", "TomasPerez1", "arturogutierrez11"],
       demoLink: "https://proyecto-final-frontend-jhoniernem.vercel.app/",
     },
   },
@@ -53,7 +61,17 @@ export const PROJECTS = [
     gitLink: "https://github.com/SourerDev/PI-Dogs-main",
     more: {
       view: false,
-      techStack: ["Pending..."],
+      techStack: [
+        "React 18.2.0",
+        "Redux 4.2.0",
+        "Typescript 4.8.4",
+        "Axios 1.1.2",
+        "Pure CSS",
+        "NodeJS 16.15.1",
+        "Express 4.17.1",
+        "Sequelize 6.3.5",
+        "PostgreSQL 12.12.0",
+      ],
       goals: ["Pending..."],
       contributors: ["SourerDev"],
       demoLink: "",
