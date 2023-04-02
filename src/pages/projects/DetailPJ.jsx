@@ -1,4 +1,5 @@
 import BGoBack from "../../components/form/buttons/BGoBack";
+import Contributors from "../../components/cards/Contributors";
 
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -46,20 +47,7 @@ export default function DetailPJ() {
               </li>
             ))}
           </ul>
-          <h3 className="text-xl font-semibold">Contribuitors</h3>
-          <ul className="flex gap-2">
-            {project.more.contribuitors.map((user, i) => (
-              <li key={i}>
-                <a href={`https://github.com/${user}`}>
-                  <img
-                    className="rounded-full w-12"
-                    src={`https://avatars.githubusercontent.com/${user}`}
-                    alt=""
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Contributors contributors={project.more.contributors}/>
         </section>
       </div>
     </div>
