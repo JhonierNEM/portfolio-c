@@ -1,8 +1,8 @@
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
-import { pages } from "../../information/english";
+import { PAGES } from "../../information/english";
 
 export default function Main() {
-  const { MAIN } = pages;
+  const { MAIN } = PAGES;
 
   return (
     <div

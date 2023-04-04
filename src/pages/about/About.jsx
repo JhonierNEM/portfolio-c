@@ -2,10 +2,13 @@
 import HTitle from "../../components/headers/HTitle";
 import BDownload from "../../components/form/buttons/BDownload";
 
-import { pages } from "../../information/english";
+import { useSelector } from "react-redux";
+
+import { PAGES } from "../../information/english";
 
 export default function About({}) {
-  const { ABOUTME} = pages;
+  const {ABOUTME} = useSelector((state)=>state.app.information.PAGES)
+  
   return (
     <div className="bg-main text-tx-main min-h-screen px-6 sm:min-h-[600px]" id="about">
       <HTitle title={ABOUTME.title} sub={ABOUTME.sub}/>
