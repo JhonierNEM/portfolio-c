@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import Language from "../form/selects/Language";
 import { IconType } from "../../assets";
 import BIcon from "../form/buttons/BIcon";
 
@@ -55,6 +56,7 @@ export default function Nav({ view }) {
           </ul>
         )}
         <div id="socialnetwork" className="flex gap-2">
+          <Language/>
           <BIcon
             icon={IconType.LINKEDIN}
             href="https://www.linkedin.com/in/yhonier-c-alegria"
