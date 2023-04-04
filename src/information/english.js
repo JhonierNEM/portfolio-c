@@ -1,6 +1,6 @@
 import { IMGs_PY, IMGs_DA, IMGs_TW, IMGs_US, documents } from "../assets";
 
-export const pages = {
+export const PAGES = {
   MAIN: {
     head: "Alegria",
     title: "",
@@ -45,7 +45,7 @@ export const PROJECTS = [
         "Tailwindcss 3.2.3",
         "Styled- Components 5.3.6",
         "Sweetalert2 11.6.14",
-        "Mercadopago 1.5.14"
+        "Mercadopago 1.5.14",
       ],
       goals: [" Define the basic structure of the project (Front-End)"],
       contributors: ["SourerDev", "TomasPerez1", "arturogutierrez11"],
@@ -93,3 +93,8 @@ export const PROJECTS = [
     },
   },
 ];
+
+export const information = {
+  PROJECTS,
+  PAGES,
+};
