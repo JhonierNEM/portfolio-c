@@ -1,2 +1,2 @@
 export {counterRs} from "./counter";
-export {appRs,setViewNav} from "./App"
+export {appRs,setViewNav,setInformation} from "./App"
