@@ -5,12 +5,12 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setViewNav } from "../../redux/reducers";
-import { PROJECTS } from "../../information/english";
+import { useSelector } from "react-redux";
 
 export default function DetailPJ() {
   const dispatch = useDispatch();
   const { id } = useParams();
-  const [project] = PROJECTS.filter((project) => project.id === parseInt(id));
+  const [project] = useSelector(state=> state.app.information.PROJECTS).filter((project) => project.id === parseInt(id));
 
   useEffect(() => {
     dispatch(setViewNav(false));
@@ -21,9 +21,9 @@ export default function DetailPJ() {
 
   return (
     <div className="min-h-screen bg-main text-tx-main px-6  pt-6 md:px-16  md:pt-[5.5rem]">
-      <div className="mb-3">
-        <h2 className="text-3xl font-bold">{project.name}</h2>
+      <div className="mb-3 gap-10 flex items-center">
         <BGoBack />
+        <h2 className="text-3xl font-bold">{project.name}</h2>
       </div>
       <div className="flex flex-col gap-5 md:flex-row">
         <section>
