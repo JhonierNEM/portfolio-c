@@ -3,8 +3,11 @@ import { Link as LinkS } from "react-scroll";
 import Language from "../form/selects/Language";
 import { IconType } from "../../assets";
 import BIcon from "../form/buttons/BIcon";
+import { useSelector } from "react-redux";
 
 export default function Nav({ view }) {
+  const {NAV} = useSelector(state=>state.app.information.PAGES.MORE)
+  
   return (
     <div className="hidden text-tx-main max-h-[5rem] h-[4rem] fixed top-0 left-0 w-full z-50 md:block px-2 pt-2 backdrop-blur-sm">
       <nav className="h-full flex items-center justify-between px-14 rounded shadow-lg shadow-black bg-main">
@@ -30,7 +33,7 @@ export default function Nav({ view }) {
                 smooth={true}
                 duration={500}
               >
-                Projects
+                {NAV[0]}
               </LinkS>
             </li>
             <li>
@@ -40,7 +43,7 @@ export default function Nav({ view }) {
                 smooth={true}
                 duration={500}
               >
-                About
+                {NAV[1]}
               </LinkS>
             </li>
             <li>
@@ -50,7 +53,7 @@ export default function Nav({ view }) {
                 smooth={true}
                 duration={500}
               >
-                Contact
+                {NAV[2]}
               </LinkS>
             </li>
           </ul>

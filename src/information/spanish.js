@@ -3,28 +3,35 @@ import { IMGs_PY, IMGs_DA, IMGs_TW, IMGs_US, documents } from "../assets";
 export const PAGES = {
   MAIN: {
     head: "Alegria",
-    title: "",
+    greetings: "Hola!, me llamo",
     user: "Yhonier Alegria",
-    profession: "FrontEnd Developer",
+    profession: "Soy un Desarrollador FrontEnd",
     img: IMGs_US.main,
     descrip:
-      'I love programming, I want to explore this world more and enjoy the journey "I will always be willing to improve".',
+      'Me encanta la programción, quiero explorar mas este mundo y disfrutar el recorrido "Siempre podré mejorar".',
+    contact: "Contactar",
   },
-  PROJECTS: {
-    title: "Projects",
-    sub: "Main Projects",
+  PROJECT: {
+    title: "Proyectos",
+    sub: "Proyectos Principales ",
   },
   ABOUTME: {
     title: "Sobre Mi",
-    sub: "My Introduction",
+    sub: "Mi Introducción",
     img: IMGs_US.about,
     descrip:
-      "Web developer with skills in HTML, CSS, JavaScript, TypeScript. I have experience in ReactJS, I have a strong understanding of responsive design, with skills in agile methodologies and version control using Git.",
+      "Desarrollador web con habilidades en HTML, CSS, JavaScript, TypeScript. Tengo experiencia en ReactJS, tengo una fuerte comprensión del diseño responsivo, con habilidades en metodologías ágiles y control de versiones usando Git.",
     cv: documents.cvAlegriaEng,
+    download: "Descargar",
   },
   CONTACTME: {
-    title: "Contact Me",
-    sub: "Send me a message",
+    title: "Contacto",
+    sub: "Enviame un mensaje",
+    labels:["Nombre","Correo","Asunto","Mensaje"],
+    contact:"Contactar"
+  },
+  MORE: {
+    NAV: ["Proyectos","Sobre Mi","Contactar"],
   },
 };
 export const PROJECTS = [

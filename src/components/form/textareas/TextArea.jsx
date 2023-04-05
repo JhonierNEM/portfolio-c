@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function TextArea({ name, cols, rows, changeValue, value }) {
+export default function TextArea({ name, cols, rows, changeValue, value,placeholder}) {
   return (
     <div className="w-full md:h-full">
       <textarea
@@ -9,7 +9,7 @@ export default function TextArea({ name, cols, rows, changeValue, value }) {
         name={name}
         cols={cols}
         rows={rows}
-        placeholder="Message"
+        placeholder={placeholder}
         onChange={changeValue}
         value={value}
       />

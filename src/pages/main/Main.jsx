@@ -1,9 +1,8 @@
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
-import { PAGES } from "../../information/english";
+import { useSelector } from "react-redux";
 
 export default function Main() {
-  const { MAIN } = PAGES;
-
+  const { MAIN } = useSelector((state) => state.app.information.PAGES);
   return (
     <div
       id="home"
@@ -26,13 +25,13 @@ export default function Main() {
 
       <div className="w-full sm:p-12">
         <span className="text-[1em] text-second font-mono ml-6 sm:text-[1.5em] md:text-[2em]">
-          Hi, My name is
+          {MAIN.greetings}
         </span>
         <h1 className="text-[2.4em] font-bold -mt-3 whitespace-nowrap sm:text-[3em] md:text-[3.6em]">
           {MAIN.user}
         </h1>
         <h2 className="text-[1.2em] font-semibold text-tx-main/50 bg-clip-text bg-gradient-to-l from-textThree -mt-3 whitespace-nowrap sm:text-[2em] md:text-[2.6em]">
-          I'm a {MAIN.profession}
+          {MAIN.profession}
         </h2>
         <p className="text-[1em] sm:text-[1.4em] md:text-[1.8em] md:max-w-[80%]">
           {MAIN.descrip}
@@ -43,7 +42,7 @@ export default function Main() {
         href="#contactme"
         className="bg-second flex px-8 py-4 mt-8 gap-2 rounded-md animate-bounce hover:bg-hv-main shadow-lg shadow-black md:absolute md:right-6 bottom-6"
       >
-        <span className="text-lg text-txFirst font-bold ">Contact</span>
+        <span className="text-lg text-txFirst font-bold ">{MAIN.contact}</span>
         <PaperAirplaneIcon className="stroke-txFirst " width={30} height={30} />
       </a>
     </div>

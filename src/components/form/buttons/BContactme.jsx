@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export default function B_Contactme(type, click) {
+export default function BContactme({type,label}) {
   return (
-    <Send type={type} onClick={click} className="bg-second hover:bg-hv-main">
+    <Send type={type} className="bg-second hover:bg-hv-main">
       <Wrapper1>
         <Wrapper>
           <Svg
@@ -19,7 +19,7 @@ export default function B_Contactme(type, click) {
           </Svg>
         </Wrapper>
       </Wrapper1>
-      <Span>Contact</Span>
+      <Span>{label}</Span>
     </Send>
   );
 }

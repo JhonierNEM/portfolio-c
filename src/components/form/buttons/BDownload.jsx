@@ -3,7 +3,7 @@ import BIcon from "./BIcon";
 
 import { IconType } from "../../../assets";
 
-export default function BDownload({file}) {
+export default function BDownload({value,file}) {
   return (
     <a
       href={file}
@@ -11,7 +11,7 @@ export default function BDownload({file}) {
       className=" bg-second w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hv-main"
     >
       <span className="pl-2 text-lg font-bold whitespace-nowrap">
-        Download CV
+        {value} CV
       </span>
       <BIcon icon={IconType.DOWNLOAD}/>
     </a>

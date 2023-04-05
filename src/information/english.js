@@ -3,14 +3,15 @@ import { IMGs_PY, IMGs_DA, IMGs_TW, IMGs_US, documents } from "../assets";
 export const PAGES = {
   MAIN: {
     head: "Alegria",
-    title: "",
+    greetings: "Hi!, my name is",
     user: "Yhonier Alegria",
-    profession: "FrontEnd Developer",
+    profession: "I'm a FrontEnd Developer",
     img: IMGs_US.main,
     descrip:
       'I love programming, I want to explore this world more and enjoy the journey "I will always be willing to improve".',
+    contact: "Contact",
   },
-  PROJECTS: {
+  PROJECT: {
     title: "Projects",
     sub: "Main Projects",
   },
@@ -21,10 +22,16 @@ export const PAGES = {
     descrip:
       "Web developer with skills in HTML, CSS, JavaScript, TypeScript. I have experience in ReactJS, I have a strong understanding of responsive design, with skills in agile methodologies and version control using Git.",
     cv: documents.cvAlegriaEng,
+    download: "Download",
   },
   CONTACTME: {
     title: "Contact Me",
     sub: "Send me a message",
+    labels:["Name","Email","subject","Message"],
+    contact:"Contact"
+  },
+  MORE: {
+    NAV: ["Projects","About","Contact"],
   },
 };
 export const PROJECTS = [

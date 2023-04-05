@@ -6,6 +6,7 @@ import TextArea from "../../components/form/textareas/TextArea";
 import BContactme from "../../components/form/buttons/BContactme";
 import emailjs from "emailjs-com";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 const Form = {
   name: "",
@@ -17,6 +18,7 @@ const Form = {
 
 export default function ContactMe() {
   const [form, setForm] = useState(Form);
+  const {CONTACTME} = useSelector(state=> state.app.information.PAGES)
   const [response, setResponse] = useState({
     status: true,
     message: "Enviado Correctamente",
@@ -53,7 +55,7 @@ export default function ContactMe() {
 
   return (
     <div id="contactme" className="bg-main text-tx-main min-h-screen px-6">
-      <HTitle title="Contact Me" sub="Send me a message" />
+      <HTitle title={CONTACTME.title} sub={CONTACTME.sub} />
 
       <form
         action=""
@@ -66,24 +68,24 @@ export default function ContactMe() {
             name="name"
             changeValue={handleChangeForm}
             value={form.name}
-            label="Name"
+            label={CONTACTME.labels[0]}
           />
           <Input
             type="email"
             name="email"
             changeValue={handleChangeForm}
             value={form.email}
-            label="Email"
+            label={CONTACTME.labels[1]}
           />
           <Input
             type="value"
             name="subject"
             changeValue={handleChangeForm}
             value={form.subject}
-            label="Subject"
+            label={CONTACTME.labels[2]}
           />
           <div className="hidden place-content-center md:grid">
-            <BContactme />
+            <BContactme label={CONTACTME.contact}/>
           </div>
         </section>
         <section className="md:flex-1 p-5">
@@ -93,9 +95,10 @@ export default function ContactMe() {
             rows={10}
             changeValue={handleChangeForm}
             value={form.message}
+            placeholder={CONTACTME.labels[3]}
           />
           <div className="grid place-content-center md:hidden">
-            <BContactme />
+            <BContactme label={CONTACTME.contact}/>
           </div>
         </section>
       </form>
