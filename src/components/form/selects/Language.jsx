@@ -15,7 +15,7 @@ export default function Language() {
   return (
     <select
       onChange={changeLanguage}
-      className="block bg-main rounded-md shadow w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+      className="block bg-main rounded-md shadow w-full max-w-[150px] py-2 md:px-3 leading-tight focus:outline-none focus:shadow-outline"
     >
       <option value="EN" className="">
         EN

@@ -1,13 +1,16 @@
 //components
 import Item from "./items/Item";
 import BIcon from "../form/buttons/BIcon";
+import Languaje from "../form/selects/Language"
 
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Squares2X2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { IconType } from "../../assets";
+import { useSelector } from "react-redux";
 
 export default function Menu({ view }) {
+  const {NAV} = useSelector(state => state.app.information.PAGES.MORE)
   return (
     <Popover>
       {view && (
@@ -35,30 +38,32 @@ export default function Menu({ view }) {
             <XMarkIcon />
           </Popover.Button>
           <div className="h-4/5 p-2 space-y-3 flex flex-col rounded-lg mb-2 sm:text-xl ">
-            <Item to="#home" title="Inicio" IconType={IconType.HOME} />
-            <Item to="#projects" title="Proyectos" IconType={IconType.CODE} />
-            <Item to="#about" title="Sobre mi" IconType={IconType.ABOUT} />
+            <Item to="#home" title={NAV[3]} IconType={IconType.HOME} />
+            <Item to="#projects" title={NAV[0]} IconType={IconType.CODE} />
+            <Item to="#about" title={NAV[1]} IconType={IconType.ABOUT} />
             {/* <Item to="#skills" title="Habilidades" icon="note/stroke"/> */}
             {/*  <Item to="#services" title="Servicios" icon="service"/> */}
             <Item
               to="#contactme"
-              title="Contactame"
+              title={NAV[2]}
               IconType={IconType.CONTACT + "/stroke"}
               className="stroke-tx-main"
             />
           </div>
-          <div className="h-1/5 border-t w-1/2 self-center flex p-2  justify-between">
-            <BIcon
-              className="w-8 hover:fill-hv-main"
-              icon={IconType.LINKEDIN}
-              href="https://www.linkedin.com/in/yhonier-c-alegria"
-            />
-            <BIcon
-              className="w-8 hover:fill-hv-main"
-              icon={IconType.GITHUB}
-              href="https://github.com/SourerDev"
-            />
-            {/* <BIcon className="hover:fill-hoverOne" icon={IconType.INSTAGRAM}/> */}
+          <div className="border-t w-1/2 flex self-center justify-between gap-2 sm:p-2">
+           <Languaje/>
+            <div className="flex gap-4">
+              <BIcon
+                className="w-8 hover:fill-hv-main"
+                icon={IconType.LINKEDIN}
+                href="https://www.linkedin.com/in/yhonier-c-alegria"
+              />
+              <BIcon
+                className="w-8 hover:fill-hv-main"
+                icon={IconType.GITHUB}
+                href="https://github.com/SourerDev"
+              />
+            </div>
           </div>
         </Popover.Panel>
       </Transition>
