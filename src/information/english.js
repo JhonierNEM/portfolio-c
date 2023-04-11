@@ -31,7 +31,7 @@ export const PAGES = {
     contact:"Contact"
   },
   MORE: {
-    NAV: ["Projects","About","Contact"],
+    NAV: ["Projects","About","Contact","Home"],
   },
 };
 export const PROJECTS = [

@@ -31,7 +31,7 @@ export const PAGES = {
     contact: "Contactar",
   },
   MORE: {
-    NAV: ["Proyectos", "Sobre Mi", "Contactar"],
+    NAV: ["Proyectos", "Sobre Mi", "Contactar","Inicio"],
   },
 };
 export const PROJECTS = [
