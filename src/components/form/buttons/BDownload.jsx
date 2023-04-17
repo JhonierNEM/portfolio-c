@@ -3,7 +3,7 @@ import BIcon from "./BIcon";
 
 import { IconType } from "../../../assets";
 
-export default function BDownload({value,file}) {
+export default function BDownload({text,file}) {
   return (
     <a
       href={file}
@@ -11,14 +11,14 @@ export default function BDownload({value,file}) {
       className=" bg-second w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hv-main"
     >
       <span className="pl-2 text-lg font-bold whitespace-nowrap">
-        {value} CV
+        {text}
       </span>
       <BIcon icon={IconType.DOWNLOAD}/>
     </a>
   );
 }
-/* 
-const Button = styled.a`
+/**
+ *.button {
   --width: 100px;
   --height: 35px;
   --tooltip-height: 35px;
@@ -33,10 +33,11 @@ const Button = styled.a`
   text-align: center;
   border-radius: 0.45em;
   font-family: "Arial";
+  -webkit-transition: background 0.3s;
   transition: background 0.3s;
+}
 
-
-::before {
+.button::before {
   position: absolute;
   content: attr(data-tooltip);
   width: var(--tooltip-width);
@@ -50,7 +51,7 @@ const Button = styled.a`
   left: calc(50% - var(--tooltip-width) / 2);
 }
 
-::after {
+.button::after {
   position: absolute;
   content: '';
   width: 0;
@@ -61,16 +62,23 @@ const Button = styled.a`
   bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
 }
 
-::after,::before {
+.button::after,.button::before {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .button-wrapper,.text,.icon {
@@ -87,39 +95,60 @@ const Button = styled.a`
 }
 
 .text,.icon {
+  -webkit-transition: top 0.5s;
   transition: top 0.5s;
 }
 
 .icon {
   color: #fff;
   top: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-:hover {
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
   background: #6c18ff;
 }
 
-:hover .text {
+.button:hover .text {
   top: -100%;
 }
 
-:hover .icon {
+.button:hover .icon {
   top: 0;
 }
 
-:hover:before, :hover:after {
+.button:hover:before,.button:hover:after {
   opacity: 1;
   visibility: visible;
 }
 
-:hover:after {
+.button:hover:after {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
 }
 
-:hover:before {
+.button:hover:before {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
-` */
+
+<div class="button" data-tooltip="Size: 20Mb">
+  <div class="button-wrapper">
+    <div class="text">Download</div>
+    <span class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+    </span>
+  </div>
+</div>
+ */
