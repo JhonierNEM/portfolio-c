@@ -1,10 +1,10 @@
 //componets
-import BIcon from '../form/buttons/BIcon'
-import { IconType } from '../../assets'
+import BIcon from './form/buttons/BIcon'
+import { IconType } from '../assets'
 
-export default function Footer() {
+export function Footer() {
   return (
-    <footer className="bg-main text-tx-main border-t-2 border-black py-4 px-8 flex justify-between">
+    <footer className="bg-main text-tx-main border-t-2 border-black pt-10 pb-4 px-8 flex justify-between">
       <section>
         <span>by Yhonier Alegria</span>
       </section>
