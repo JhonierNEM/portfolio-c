@@ -9,7 +9,7 @@ import { Squares2X2Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { IconType } from '../../assets'
 import { useSelector } from 'react-redux'
 
-export default function Menu({ view }) {
+export function Menu({ view }) {
   const { NAV } = useSelector((state) => state.app.information.PAGES.MORE)
   return (
     <Popover>
