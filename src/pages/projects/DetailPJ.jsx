@@ -1,4 +1,4 @@
-import BGoBack from '../../components/form/buttons/BGoBack'
+import { GoBackButton } from '../../components/form/buttons/GoBack'
 import Contributors from '../../components/cards/Contributors'
 
 import { useEffect } from 'react'
@@ -24,7 +24,7 @@ export default function DetailPJ() {
   return (
     <div className="min-h-screen bg-main text-tx-main px-6  pt-6 md:px-16  md:pt-[5.5rem]">
       <div className="mb-3 gap-10 flex items-center">
-        <BGoBack />
+        <GoBackButton />
         <h2 className="text-3xl font-bold">{project.name}</h2>
       </div>
       <div className="flex flex-col gap-5 md:flex-row">
