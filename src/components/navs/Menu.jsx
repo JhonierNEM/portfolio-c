@@ -1,16 +1,16 @@
 //components
-import Item from "./items/Item";
-import BIcon from "../form/buttons/BIcon";
-import Languaje from "../form/selects/Language"
+import Item from './items/Item'
+import BIcon from '../form/buttons/BIcon'
+import Languaje from '../form/selects/Language'
 
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { Squares2X2Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { IconType } from "../../assets";
-import { useSelector } from "react-redux";
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { Squares2X2Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { IconType } from '../../assets'
+import { useSelector } from 'react-redux'
 
 export default function Menu({ view }) {
-  const {NAV} = useSelector(state => state.app.information.PAGES.MORE)
+  const { NAV } = useSelector((state) => state.app.information.PAGES.MORE)
   return (
     <Popover>
       {view && (
@@ -46,12 +46,12 @@ export default function Menu({ view }) {
             <Item
               to="#contactme"
               title={NAV[2]}
-              IconType={IconType.CONTACT + "/stroke"}
+              IconType={IconType.CONTACT + '/stroke'}
               className="stroke-tx-main"
             />
           </div>
           <div className="border-t w-1/2 flex self-center justify-between gap-2 sm:p-2">
-           <Languaje/>
+            <Languaje />
             <div className="flex gap-4">
               <BIcon
                 className="w-8 hover:fill-hv-main"
@@ -68,5 +68,5 @@ export default function Menu({ view }) {
         </Popover.Panel>
       </Transition>
     </Popover>
-  );
+  )
 }

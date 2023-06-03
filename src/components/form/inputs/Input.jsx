@@ -1,18 +1,24 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export default function Input({ name, value, changeValue ,type, label}) {
+export default function Input({ name, value, changeValue, type, label }) {
   return (
     <Container>
-      <Field type={type} name={name} required onChange={changeValue} value={value}/>
+      <Field
+        type={type}
+        name={name}
+        required
+        onChange={changeValue}
+        value={value}
+      />
       <Label>
-        {label.split("").map((el, i) => (
+        {label.split('').map((el, i) => (
           <Span delay={i} key={i}>
             {i === 0 ? el.toUpperCase() : el}
           </Span>
         ))}
       </Label>
     </Container>
-  );
+  )
 }
 
 const Container = styled.div`
@@ -20,7 +26,7 @@ const Container = styled.div`
   position: relative;
   margin: 20px 0 30px;
   width: 100%;
-`;
+`
 const Field = styled.input`
   background-color: transparent;
   border: 0;
@@ -42,13 +48,13 @@ const Field = styled.input`
     transform: translateY(-30px);
     font-size: 16px;
   }
-`;
+`
 const Label = styled.label`
   position: absolute;
   top: 15px;
   left: 0;
   pointer-events: none;
-`;
+`
 const Span = styled.span`
   display: inline-block;
   font-size: 20px;
@@ -56,5 +62,5 @@ const Span = styled.span`
   color: #8c8888;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition-delay: ${(props) =>
-    props.delay === 0 ? `0ms` : props.delay * 5 + "0ms"};
-`;
+    props.delay === 0 ? '0ms' : props.delay * 5 + '0ms'};
+`

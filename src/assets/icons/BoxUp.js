@@ -12,5 +12,5 @@ export default function BoxUp({ className }) {
         <path d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0v-5z" />
       </g>
     </svg>
-  );
+  )
 }

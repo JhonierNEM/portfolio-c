@@ -1,12 +1,12 @@
 //components
-import Project from "../../components/cards/Project";
-import HTitle from "../../components/headers/HTitle";
+import Project from '../../components/cards/Project'
+import HTitle from '../../components/headers/HTitle'
 
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux'
 
 export default function Projects() {
-  const {PROJECT} = useSelector((state) => state.app.information.PAGES);
-  const projects = useSelector(state=> state.app.information.PROJECTS)
+  const { PROJECT } = useSelector((state) => state.app.information.PAGES)
+  const projects = useSelector((state) => state.app.information.PROJECTS)
   return (
     <div className="bg-main text-tx-main min-h-screen px-6" id="projects">
       <HTitle title={PROJECT.title} sub={PROJECT.sub} />
@@ -23,5 +23,5 @@ export default function Projects() {
         ))}
       </div>
     </div>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-export default function Contributors({contributors}) {
+export default function Contributors({ contributors }) {
   return (
     <div>
       <h3 className="text-xl font-semibold">Contributors</h3>
@@ -16,5 +16,5 @@ export default function Contributors({contributors}) {
         ))}
       </ul>
     </div>
-  );
+  )
 }

@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import Language from "../form/selects/Language";
-import { IconType } from "../../assets";
-import BIcon from "../form/buttons/BIcon";
-import { useSelector } from "react-redux";
+import { Link } from 'react-router-dom'
+import { Link as LinkS } from 'react-scroll'
+import Language from '../form/selects/Language'
+import { IconType } from '../../assets'
+import BIcon from '../form/buttons/BIcon'
+import { useSelector } from 'react-redux'
 
 export default function Nav({ view }) {
-  const {NAV} = useSelector(state=>state.app.information.PAGES.MORE)
-  
+  const { NAV } = useSelector((state) => state.app.information.PAGES.MORE)
+
   return (
     <div className="hidden text-tx-main max-h-[5rem] h-[4rem] fixed top-0 left-0 w-full z-50 md:block px-2 pt-2 backdrop-blur-sm">
       <nav className="h-full flex items-center justify-between px-14 rounded shadow-lg shadow-black bg-main">
@@ -18,7 +18,12 @@ export default function Nav({ view }) {
               <img src="" alt="" />
             </Link>
           ) : (
-            <LinkS to="home" smooth={true} duration={500} className="cursor-pointer">
+            <LinkS
+              to="home"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            >
               <h2 className="text-xl font-bold">Alegria</h2>
               <img src="" alt="" />
             </LinkS>
@@ -59,7 +64,7 @@ export default function Nav({ view }) {
           </ul>
         )}
         <div id="socialnetwork" className="flex gap-2">
-          <Language/>
+          <Language />
           <BIcon
             icon={IconType.LINKEDIN}
             href="https://www.linkedin.com/in/yhonier-c-alegria"
@@ -73,5 +78,5 @@ export default function Nav({ view }) {
         </div>
       </nav>
     </div>
-  );
+  )
 }

@@ -12,5 +12,5 @@ export default function Header({ Nav }) {
         </h2>
       </div>
     </>
-  );
+  )
 }

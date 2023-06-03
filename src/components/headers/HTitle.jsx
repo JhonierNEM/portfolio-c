@@ -4,5 +4,5 @@ export default function HTitle({ title, sub, className }) {
       <h1 className="text-3xl font-bold">{title}</h1>
       <p className="text-textThree">{sub}</p>
     </div>
-  );
+  )
 }

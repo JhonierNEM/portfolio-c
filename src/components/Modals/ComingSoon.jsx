@@ -1,5 +1,5 @@
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
 
 export default function ComingSoon() {
   return (
@@ -21,5 +21,5 @@ export default function ComingSoon() {
         ></Popover.Panel>
       </Transition>
     </Popover>
-  );
+  )
 }

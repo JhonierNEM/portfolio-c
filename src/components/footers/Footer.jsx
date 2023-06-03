@@ -1,6 +1,6 @@
 //componets
-import BIcon from "../form/buttons/BIcon";
-import { IconType } from "../../assets";
+import BIcon from '../form/buttons/BIcon'
+import { IconType } from '../../assets'
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
       </section>
       <section></section>
       <section className="flex gap-2">
-        {" "}
+        {' '}
         <BIcon
           icon={IconType.LINKEDIN}
           href="https://www.linkedin.com/in/yhonier-c-alegria"
@@ -23,5 +23,5 @@ export default function Footer() {
         />
       </section>
     </footer>
-  );
+  )
 }

@@ -1,10 +1,10 @@
 //Components
-import BIcon from "../form/buttons/BIcon";
+import BIcon from '../form/buttons/BIcon'
 
-import { IconType } from "../../assets";
-import { Link } from "react-router-dom";
+import { IconType } from '../../assets'
+import { Link } from 'react-router-dom'
 
-export default function Proyect({ image, title, description, gitLink,id }) {
+export default function Proyect({ image, title, description, gitLink, id }) {
   return (
     <div className="min-h-[500px] col-span-1  relative overflow-hidden shadow-lg shadow-black z-1">
       <picture className="h-full w-full" /*  */>
@@ -32,5 +32,5 @@ export default function Proyect({ image, title, description, gitLink,id }) {
         </section>
       </div>
     </div>
-  );
+  )
 }

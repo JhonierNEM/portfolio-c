@@ -1,21 +1,19 @@
 //components
-import BIcon from "./BIcon";
+import BIcon from './BIcon'
 
-import { IconType } from "../../../assets";
+import { IconType } from '../../../assets'
 
-export default function BDownload({text,file}) {
+export default function BDownload({ text, file }) {
   return (
     <a
       href={file}
       download="Cv_Yhonier_Alegria"
       className=" bg-second w-[210px] h-[60px] flex items-center justify-around p-2 rounded-lg hover:bg-hv-main"
     >
-      <span className="pl-2 text-lg font-bold whitespace-nowrap">
-        {text}
-      </span>
-      <BIcon icon={IconType.DOWNLOAD}/>
+      <span className="pl-2 text-lg font-bold whitespace-nowrap">{text}</span>
+      <BIcon icon={IconType.DOWNLOAD} />
     </a>
-  );
+  )
 }
 /**
  *.button {

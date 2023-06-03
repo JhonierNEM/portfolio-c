@@ -1,8 +1,8 @@
-import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
-import { useSelector } from "react-redux";
+import { PaperAirplaneIcon } from '@heroicons/react/24/outline'
+import { useSelector } from 'react-redux'
 
 export default function Main() {
-  const { MAIN } = useSelector((state) => state.app.information.PAGES);
+  const { MAIN } = useSelector((state) => state.app.information.PAGES)
   return (
     <div
       id="home"
@@ -15,7 +15,7 @@ export default function Main() {
       <picture className="max-w-[250px] w-3/4 grid place-content-center md:hidden md:top-4 md:right-6 md:w-[90px] md:h-auto md:z-50">
         <img
           src={MAIN.img}
-          style={{ borderRadius: "29% 71% 31% 69% / 77% 23% 77% 23%" }}
+          style={{ borderRadius: '29% 71% 31% 69% / 77% 23% 77% 23%' }}
           className="w-full bg-[#0A192F]"
           alt="MainImage"
           width={400}
@@ -46,5 +46,5 @@ export default function Main() {
         <PaperAirplaneIcon className="stroke-txFirst " width={30} height={30} />
       </a>
     </div>
-  );
+  )
 }

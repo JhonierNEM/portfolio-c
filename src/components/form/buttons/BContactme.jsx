@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export default function BContactme({type,label}) {
+export default function BContactme({ type, label }) {
   return (
     <Send type={type} className="bg-second hover:bg-hv-main">
       <Wrapper1>
@@ -21,7 +21,7 @@ export default function BContactme({type,label}) {
       </Wrapper1>
       <Span>{label}</Span>
     </Send>
-  );
+  )
 }
 
 const Send = styled.button`
@@ -58,17 +58,17 @@ const Send = styled.button`
       transform: translateY(-0.1em);
     }
   }
-`;
+`
 
 const Svg = styled.svg`
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
-`;
+`
 const Span = styled.span`
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
-`;
-const Wrapper = styled.div``;
-const Wrapper1 = styled.div``;
+`
+const Wrapper = styled.div``
+const Wrapper1 = styled.div``

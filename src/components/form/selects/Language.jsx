@@ -1,16 +1,16 @@
-import { useDispatch } from "react-redux";
-import { information as ENinformation } from "../../../information/english";
-import { information as SPinformation } from "../../../information/spanish";
+import { useDispatch } from 'react-redux'
+import { information as ENinformation } from '../../../data/english'
+import { information as SPinformation } from '../../../data/spanish'
 
-import { setInformation } from "../../../redux/reducers";
+import { setInformation } from '../../../redux/reducers'
 
 export default function Language() {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
   const changeLanguage = ({ target }) => {
-    const { value } = target;
-    if (value === "EN") dispatch(setInformation({ ...ENinformation }));
-    else dispatch(setInformation({ ...SPinformation }));
-  };
+    const { value } = target
+    if (value === 'EN') dispatch(setInformation({ ...ENinformation }))
+    else dispatch(setInformation({ ...SPinformation }))
+  }
 
   return (
     <select
@@ -24,5 +24,5 @@ export default function Language() {
         SP
       </option>
     </select>
-  );
+  )
 }

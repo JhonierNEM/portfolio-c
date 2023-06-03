@@ -1,23 +1,25 @@
-import BGoBack from "../../components/form/buttons/BGoBack";
-import Contributors from "../../components/cards/Contributors";
+import BGoBack from '../../components/form/buttons/BGoBack'
+import Contributors from '../../components/cards/Contributors'
 
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { setViewNav } from "../../redux/reducers";
-import { useSelector } from "react-redux";
+import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { setViewNav } from '../../redux/reducers'
+import { useSelector } from 'react-redux'
 
 export default function DetailPJ() {
-  const dispatch = useDispatch();
-  const { id } = useParams();
-  const [project] = useSelector(state=> state.app.information.PROJECTS).filter((project) => project.id === parseInt(id));
+  const dispatch = useDispatch()
+  const { id } = useParams()
+  const [project] = useSelector(
+    (state) => state.app.information.PROJECTS
+  ).filter((project) => project.id === parseInt(id))
 
   useEffect(() => {
-    dispatch(setViewNav(false));
+    dispatch(setViewNav(false))
     return () => {
-      dispatch(setViewNav(true));
-    };
-  }, [dispatch]);
+      dispatch(setViewNav(true))
+    }
+  }, [dispatch])
 
   return (
     <div className="min-h-screen bg-main text-tx-main px-6  pt-6 md:px-16  md:pt-[5.5rem]">
@@ -47,9 +49,9 @@ export default function DetailPJ() {
               </li>
             ))}
           </ul>
-          <Contributors contributors={project.more.contributors}/>
+          <Contributors contributors={project.more.contributors} />
         </section>
       </div>
     </div>
-  );
+  )
 }
