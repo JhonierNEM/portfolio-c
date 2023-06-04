@@ -11,6 +11,7 @@ export default function About() {
     <div
       className="bg-main text-tx-main min-h-screen px-6 sm:min-h-[600px]"
       id="about"
+      itemID="about"
     >
       <HTitle title={ABOUTME.title} sub={ABOUTME.sub} />
       <div className="flex flex-col-reverse gap-6 min-h-[60vh] md:flex-row md:px-[50px] md:gap-12">

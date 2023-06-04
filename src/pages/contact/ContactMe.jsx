@@ -54,7 +54,11 @@ export default function ContactMe() {
   }, [form.view])
 
   return (
-    <div id="contactme" className="bg-main text-tx-main min-h-screen px-6">
+    <div
+      id="contactme"
+      itemID="contact"
+      className="bg-main text-tx-main min-h-screen px-6"
+    >
       <HTitle title={CONTACTME.title} sub={CONTACTME.sub} />
 
       <form

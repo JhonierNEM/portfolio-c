@@ -22,7 +22,7 @@ export default function DetailPJ() {
   }, [dispatch])
 
   return (
-    <div className="min-h-screen bg-main text-tx-main px-6  pt-6 md:px-16  md:pt-[5.5rem]">
+    <div className="min-h-screen bg-main text-tx-main px-6">
       <div className="mb-3 gap-10 flex items-center">
         <GoBackButton />
         <h2 className="text-3xl font-bold">{project.name}</h2>

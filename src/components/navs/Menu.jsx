@@ -1,13 +1,13 @@
-//components
-import Item from './items/Item'
-import BIcon from '../form/buttons/BIcon'
-import Languaje from '../form/selects/Language'
-
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Squares2X2Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { IconType } from '../../assets'
 import { useSelector } from 'react-redux'
+
+//components
+import Item from './items/Item'
+import BIcon from '../form/buttons/BIcon'
+import { LanguageSelect } from '../form/selects/Language'
 
 export function Menu({ view }) {
   const { NAV } = useSelector((state) => state.app.information.PAGES.MORE)
@@ -51,7 +51,7 @@ export function Menu({ view }) {
             />
           </div>
           <div className="border-t w-1/2 flex self-center justify-between gap-2 sm:p-2">
-            <Languaje />
+            <LanguageSelect />
             <div className="flex gap-4">
               <BIcon
                 className="w-8 hover:fill-hv-main"
